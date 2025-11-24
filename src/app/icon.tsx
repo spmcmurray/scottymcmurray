@@ -11,19 +11,27 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
-          background: 'linear-gradient(135deg, #ff6b35 0%, #f4a261 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          fontFamily: 'Georgia, serif',
-          fontWeight: 600,
+          background: 'transparent',
         }}
       >
-        SM
+        <div
+          style={{
+            fontSize: 20,
+            background: 'linear-gradient(135deg, #ff6b35 0%, #ffffff 100%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+            fontFamily: 'Georgia, serif',
+            fontWeight: 600,
+          }}
+        >
+          SM
+        </div>
       </div>
     ),
     {
