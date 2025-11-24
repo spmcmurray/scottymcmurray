@@ -32,7 +32,7 @@ export default function AppOnePage() {
           <div className={`${styles.heroImage} animate-in animate-in-delay-2`}>
             <div className={styles.phoneMockup}>
               <img 
-                src="/TENFOLD.png" 
+                src="/TENFOLD_Screenshot.jpg" 
                 alt="TENFOLD app screenshot showing workout tracking interface"
                 className={styles.appScreenshot}
               />
