@@ -31,7 +31,7 @@
 }
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: var(--space-md) 0 var(--space-xl) 0;
 }
 
 .contactGrid {
@@ -72,9 +72,10 @@
 }
 
 .contactLink {
-  display: inline-block;
+  display: block;
   color: var(--color-accent);
   font-weight: 600;
+  word-break: break-all;
   transition: color var(--transition-fast);
 }
 

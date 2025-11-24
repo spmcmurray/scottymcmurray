@@ -36,6 +36,7 @@ export default function Footer() {
             <h4 className={styles.sectionTitle}>Connect</h4>
             <nav className={styles.links}>
               <a href="mailto:scottymcmurray@gmail.com" className={styles.link}>Email</a>
+              <a href="https://www.linkedin.com/in/scottymcmurray/" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
               <a href="https://github.com/spmcmurray" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
             </nav>
           </div>
