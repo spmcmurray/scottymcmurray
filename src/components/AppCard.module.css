@@ -1,0 +1,77 @@
+.card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-elevated);
+  border-radius: 16px;
+  padding: var(--space-md);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  cursor: pointer;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.2);
+}
+
+.card:hover .cardGradient {
+  opacity: 0.15;
+}
+
+.card:hover .cardArrow {
+  transform: translateX(8px);
+}
+
+.cardGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  opacity: 0.8;
+  transition: opacity var(--transition-base);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.platformBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-surface-elevated);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.cardTitle {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.cardDescription {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.cardArrow {
+  display: flex;
+  align-items: center;
+  color: var(--color-accent);
+  transition: transform var(--transition-base);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-sm);
+  }
+}
