@@ -13,7 +13,7 @@ export default function Home() {
               Simple apps for a <span className={styles.highlight}>simpler life</span>
             </h1>
             <p className={`${styles.heroSubtitle} animate-in animate-in-delay-1`}>
-              I'm <strong>Scott McMurray</strong>, a Self-Taught Developer from Ohio building a portfolio of apps that add value to people's lives—without the addictive, algorithm-driven attention-grabbing of big tech. 
+              I'm <strong>Scott McMurray</strong>, a self-taught developer from Ohio building a portfolio of apps that add value to people's lives, without the addictive algorithms of big tech. 
               Husband, father, and creator of simple, thoughtful applications.
             </p>
             <div className={`${styles.heroActions} animate-in animate-in-delay-2`}>

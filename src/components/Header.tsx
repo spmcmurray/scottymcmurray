@@ -19,7 +19,15 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoText}>SM</span>
+          <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style={{stopColor: '#ff6b35', stopOpacity: 1}} />
+                <stop offset="100%" style={{stopColor: '#f4a261', stopOpacity: 1}} />
+              </linearGradient>
+            </defs>
+            <text x="32" y="45" fontFamily="Georgia, serif" fontSize="40" fontWeight="600" textAnchor="middle" fill="url(#headerGradient)">SM</text>
+          </svg>
         </Link>
         
         <nav className={styles.nav}>

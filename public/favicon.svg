@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4a261;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simplified SM for small size -->
+  <text x="32" y="45" font-family="Georgia, serif" font-size="40" font-weight="600" text-anchor="middle" fill="url(#faviconGradient)">SM</text>
+</svg>
