@@ -26,8 +26,8 @@ export default function AppleIcon() {
             backgroundClip: 'text',
             WebkitBackgroundClip: 'text',
             color: 'transparent',
-            fontFamily: 'Georgia, serif',
-            fontWeight: 600,
+            fontFamily: '"Times New Roman", Georgia, serif',
+            fontWeight: 700,
           }}
         >
           SM
