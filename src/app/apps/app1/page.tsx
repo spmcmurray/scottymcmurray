@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -32,13 +31,10 @@ export default function AppOnePage() {
           </div>
           <div className={`${styles.heroImage} animate-in animate-in-delay-2`}>
             <div className={styles.phoneMockup}>
-              <Image 
+              <img 
                 src="/TENFOLD.png" 
                 alt="TENFOLD app screenshot showing workout tracking interface"
-                width={300}
-                height={649}
                 className={styles.appScreenshot}
-                priority
               />
             </div>
           </div>
