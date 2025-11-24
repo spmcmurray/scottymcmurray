@@ -105,15 +105,20 @@
 }
 
 .phoneMockup {
-  width: 280px;
-  height: 560px;
-  background: linear-gradient(135deg, #2a2218 0%, #1a1612 100%);
+  width: 300px;
   border-radius: 40px;
-  padding: 12px;
+  overflow: hidden;
   box-shadow: 
-    0 0 0 1px rgba(255, 107, 53, 0.1),
+    0 0 0 8px #1a1612,
+    0 0 0 10px rgba(255, 107, 53, 0.2),
     0 20px 60px rgba(0, 0, 0, 0.5);
   position: relative;
+}
+
+.appScreenshot {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .phoneMockup::before {
