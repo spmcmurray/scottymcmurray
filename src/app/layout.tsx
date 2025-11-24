@@ -23,18 +23,28 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Scott McMurray - App Developer Portfolio',
-  description: 'Ohio-based self-taught developer building profitable apps. Portfolio of iOS apps and games focused on fitness, faith, and fun.',
+  title: 'Scott McMurray - App Developer',
+  description: 'Simple apps for a simpler life. Ohio-based self-taught developer building iOS apps and games focused on fitness, faith, and fun.',
   keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'Church Explorer', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
   authors: [{ name: 'Scott McMurray' }],
   openGraph: {
-    title: 'Scott McMurray - Simple Apps to Simplify & Delight',
-    description: 'Ohio-based developer creating thoughtful apps and games that simplify your day or make it more fun.',
-
+    title: 'Scott McMurray - Simple Apps for a Simpler Life',
+    description: 'Simple apps for a simpler life. Ohio-based developer creating iOS apps and games that simplify your day or make it more fun.',
     url: 'https://scottymcmurray.com',
     siteName: 'Scott McMurray',
     locale: 'en_US',
     type: 'website',
+    images: [{
+      url: 'https://scottymcmurray.com/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Scott McMurray - Simple Apps for a Simpler Life',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Scott McMurray - Simple Apps for a Simpler Life',
+    description: 'Simple apps for a simpler life. iOS apps and games that simplify your day or make it more fun.',
   },
 }
 
