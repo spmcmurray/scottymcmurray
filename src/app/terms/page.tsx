@@ -106,7 +106,7 @@ export default function TermsPage() {
               If you have any questions about these Terms of Service, please contact me at:
             </p>
             <p>
-              <strong>Email:</strong> <a href="mailto:legal@scottymcmurray.com">legal@scottymcmurray.com</a>
+              <strong>Email:</strong> <a href="mailto:scottymcmurray@gmail.com">scottymcmurray@gmail.com</a>
             </p>
           </section>
         </div>

@@ -128,7 +128,7 @@ export default function PrivacyPage() {
             <p>
               My applications do not knowingly collect any information from children under the age of 13. 
               If you believe a child has provided information through my apps, please contact me immediately 
-              at privacy@scottymcmurray.com, and I will take steps to delete that information.
+              at scottymcmurray@gmail.com, and I will take steps to delete that information.
             </p>
           </section>
 
@@ -147,7 +147,7 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy, please contact me at:
             </p>
             <p>
-              <strong>Email:</strong> <a href="mailto:privacy@scottymcmurray.com">privacy@scottymcmurray.com</a>
+              <strong>Email:</strong> <a href="mailto:scottymcmurray@gmail.com">scottymcmurray@gmail.com</a>
             </p>
           </section>
         </div>

@@ -101,5 +101,5 @@ Works on any platform supporting Next.js:
 
 ## Contact
 
-- Email: hello@scottymcmurray.com
+- Email: scottymcmurray@gmail.com
 - Website: scottymcmurray.com

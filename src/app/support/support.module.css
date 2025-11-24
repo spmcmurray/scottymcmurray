@@ -35,9 +35,8 @@
 }
 
 .contactGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-md);
+  display: flex;
+  justify-content: center;
   margin-bottom: var(--space-xl);
 }
 
@@ -47,6 +46,8 @@
   border-radius: 16px;
   padding: var(--space-lg);
   text-align: center;
+  max-width: 500px;
+  width: 100%;
   transition: transform var(--transition-base), border-color var(--transition-base);
 }
 

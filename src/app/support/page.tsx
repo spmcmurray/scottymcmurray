@@ -22,20 +22,11 @@ export default function SupportPage() {
         <div className={styles.container}>
           <div className={styles.contactGrid}>
             <div className={styles.contactCard}>
-              <div className={styles.contactIcon}>💬</div>
-              <h2>General Inquiries</h2>
-              <p>Questions, ideas, or just want to say hello?</p>
-              <a href="mailto:hello@scottymcmurray.com" className={styles.contactLink}>
-                hello@scottymcmurray.com
-              </a>
-            </div>
-
-            <div className={styles.contactCard}>
               <div className={styles.contactIcon}>📧</div>
-              <h2>App Support</h2>
-              <p>For bug reports, feature requests, or help with any of my apps.</p>
-              <a href="mailto:support@scottymcmurray.com" className={styles.contactLink}>
-                support@scottymcmurray.com
+              <h2>Contact Me</h2>
+              <p>Questions, bug reports, feature requests, or just want to say hello?</p>
+              <a href="mailto:scottymcmurray@gmail.com" className={styles.contactLink}>
+                scottymcmurray@gmail.com
               </a>
             </div>
           </div>
@@ -45,12 +36,12 @@ export default function SupportPage() {
             
             <div className={styles.faq}>
               <h3>How do I report a bug?</h3>
-              <p>Send me an email at support@scottymcmurray.com with details about the issue, including what you were doing when it occurred and any error messages you saw. Screenshots are always helpful!</p>
+              <p>Send me an email at scottymcmurray@gmail.com with details about the issue, including what you were doing when it occurred and any error messages you saw. Screenshots are always helpful!</p>
             </div>
 
             <div className={styles.faq}>
               <h3>Can I request a new feature?</h3>
-              <p>Absolutely! I love hearing from users. Send your feature ideas to support@scottymcmurray.com. While I can't implement every request, I carefully consider all feedback.</p>
+              <p>Absolutely! I love hearing from users. Send your feature ideas to scottymcmurray@gmail.com. While I can't implement every request, I carefully consider all feedback.</p>
             </div>
 
             <div className={styles.faq}>
