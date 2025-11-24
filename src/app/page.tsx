@@ -13,8 +13,7 @@ export default function Home() {
               Simple apps for a <span className={styles.highlight}>simpler life</span>
             </h1>
             <p className={`${styles.heroSubtitle} animate-in animate-in-delay-1`}>
-              I'm <strong>Scott McMurray</strong>, a self-taught developer from Ohio building a portfolio of apps that add value to people's lives, without the addictive algorithms of big tech. 
-              Husband, father, and creator of simple, thoughtful applications.
+              I'm <strong>Scott McMurray</strong>, a self-taught developer from Ohio building apps that add value to people's lives, without the addictive algorithms of big tech.
             </p>
             <div className={`${styles.heroActions} animate-in animate-in-delay-2`}>
               <a href="#apps" className={styles.ctaPrimary}>Explore My Apps</a>
@@ -30,7 +29,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>My Applications</h2>
             <p className={styles.sectionDescription}>
-              Each app is designed with intention—whether it's removing complexity to help you focus, or adding a spark of joy to make your day more fun.
+              From fitness tracking to faith exploration to fast-paced fun, each app is built to add real value to your daily life.
             </p>
           </div>
 
@@ -77,7 +76,7 @@ export default function Home() {
               </p>
               <p className={styles.aboutText}>
                 I embrace <strong>AI-first development practices</strong>, leveraging modern tools to build 
-                faster and smarter. This allows me to focus on creating profitable apps that solve real problems.
+                faster and smarter. This allows me to focus on creating apps that solve real problems.
               </p>
             </div>
 
