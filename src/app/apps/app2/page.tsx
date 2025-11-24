@@ -31,8 +31,20 @@ export default function AppTwoPage() {
             </div>
           </div>
           <div className={`${styles.heroImage} animate-in animate-in-delay-2`}>
-            <div className={styles.phoneMockup}>
-              <div className={styles.phoneScreen}></div>
+            <div className={styles.browserMockup}>
+              <div className={styles.browserChrome}>
+                <div className={styles.browserDots}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className={styles.browserUrl}>churchexplorer.org</div>
+              </div>
+              <img 
+                src="/churchexplorer_screenshot.png" 
+                alt="Church Explorer web app screenshot"
+                className={styles.browserScreenshot}
+              />
             </div>
           </div>
         </div>

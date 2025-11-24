@@ -161,6 +161,7 @@
   display: flex;
   align-items: center;
   padding: 0 var(--space-sm);
+  gap: var(--space-sm);
 }
 
 .browserDots {
@@ -176,10 +177,18 @@
   opacity: 0.3;
 }
 
-.browserContent {
-  height: 350px;
-  background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-accent) 100%);
-  opacity: 0.3;
+.browserUrl {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.browserScreenshot {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Features Section */

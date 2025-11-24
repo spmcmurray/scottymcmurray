@@ -30,15 +30,12 @@ export default function AppThreePage() {
             </div>
           </div>
           <div className={`${styles.heroImage} animate-in animate-in-delay-2`}>
-            <div className={styles.browserMockup}>
-              <div className={styles.browserChrome}>
-                <div className={styles.browserDots}>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-              <div className={styles.browserContent}></div>
+            <div className={styles.phoneMockup}>
+              <img 
+                src="/RADICALRUSH_Screenshot.jpg" 
+                alt="RADICAL RUSH game screenshot showing gesture controls"
+                className={styles.appScreenshot}
+              />
             </div>
           </div>
         </div>
