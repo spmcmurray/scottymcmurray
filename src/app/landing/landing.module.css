@@ -1,60 +1,63 @@
 .landingContainer {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  padding: 0 1.5rem 2rem 1.5rem;
-  max-width: 700px;
+  font-family: var(--font-body);
+  padding: 0 var(--space-md) var(--space-lg) var(--space-md);
+  max-width: var(--max-width);
   margin: 0 auto;
+  color: var(--color-text);
 }
 
 .hero {
   text-align: center;
-  padding: 3rem 0 2rem 0;
+  padding: var(--space-lg) 0 var(--space-md) 0;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #1a202c;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  color: #4a5568;
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
 }
 
 .localFocus {
   font-weight: bold;
-  color: #2563eb;
-  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
   font-size: 1.1rem;
 }
 
 .ctaButton {
   display: inline-block;
-  background: linear-gradient(90deg, #2563eb, #38bdf8);
-  color: #fff;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-bright) 100%);
+  color: var(--color-bg);
   padding: 0.75rem 2rem;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  margin-top: 1rem;
-  transition: background 0.2s;
+  margin-top: var(--space-sm);
+  transition: all var(--transition-base);
 }
 
 .ctaButton:hover {
-  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
 }
 
 .services {
-  background: #f1f5f9;
+  background: var(--color-surface);
   border-radius: 1rem;
-  padding: 2rem 1rem;
-  margin: 2rem 0;
+  padding: var(--space-md) var(--space-sm);
+  margin: var(--space-md) 0;
 }
 
 .services h2 {
-  margin-bottom: 1rem;
-  color: #1a202c;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
 }
 
 .services ul {
@@ -63,31 +66,31 @@
 }
 
 .services li {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-sm);
   font-size: 1.1rem;
 }
 
 .localSection {
-  margin: 2rem 0;
+  margin: var(--space-md) 0;
   text-align: center;
 }
 
 .localSection h2 {
-  color: #1a202c;
+  color: var(--color-text);
 }
 
 .county {
-  color: #2563eb;
+  color: var(--color-accent);
   font-weight: bold;
 }
 
 .contact {
-  background: #e0f2fe;
+  background: var(--color-surface-elevated);
   border-radius: 1rem;
-  padding: 2rem 1rem;
+  padding: var(--space-md) var(--space-sm);
   text-align: center;
 }
 
 .contact h2 {
-  color: #1a202c;
+  color: var(--color-text);
 }
