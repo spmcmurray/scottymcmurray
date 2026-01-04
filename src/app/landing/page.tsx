@@ -42,7 +42,11 @@ export default function LandingPage() {
 
           <div className={styles.solutionsGrid}>
             <div className={styles.solutionCard}>
-              <div className={styles.solutionIcon}>🌐</div>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                <path d="M12 6v6m0 0v6" strokeWidth="2" strokeLinecap="round"/>
+                <path d="M6 12h6m0 0h6" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
               <h3>Modern Websites</h3>
               <p>
                 Mobile-first, fast-loading sites that convert visitors into customers. 
@@ -50,14 +54,19 @@ export default function LandingPage() {
               </p>
             </div>
             <div className={styles.solutionCard}>
-              <div className={styles.solutionIcon}>⚙️</div>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2"/>
+                <path d="M3 9h18M9 3v18" strokeWidth="2"/>
+              </svg>
               <h3>Custom Applications</h3>
               <p>
                 Tailored apps that streamline your operations, engage customers, and solve your specific business challenges.
               </p>
             </div>
             <div className={styles.solutionCard}>
-              <div className={styles.solutionIcon}>🤖</div>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" strokeWidth="2"/>
+              </svg>
               <h3>AI Integration</h3>
               <p>
                 Automate workflows, personalize customer experiences, and unlock insights. 
@@ -149,11 +158,8 @@ export default function LandingPage() {
               streamline operations, and drive growth. The first consultation is free.
             </p>
             <div className={styles.contactActions}>
-              <a href="mailto:scott@scottymcmurray.com" className={styles.ctaPrimary}>
+              <a href="mailto:scottymcmurray@gmail.com" className={styles.ctaPrimary}>
                 Schedule Your Free Call
-              </a>
-              <a href="tel:+15551234567" className={styles.ctaSecondary}>
-                Call Me Directly
               </a>
             </div>
             <p className={styles.contactMeta}>
