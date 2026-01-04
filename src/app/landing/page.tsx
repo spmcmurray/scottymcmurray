@@ -42,10 +42,10 @@ export default function LandingPage() {
 
           <div className={styles.solutionsGrid}>
             <div className={styles.solutionCard}>
-              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                <path d="M12 6v6m0 0v6" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M6 12h6m0 0h6" strokeWidth="2" strokeLinecap="round"/>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
               <h3>Modern Websites</h3>
               <p>
@@ -54,9 +54,11 @@ export default function LandingPage() {
               </p>
             </div>
             <div className={styles.solutionCard}>
-              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2"/>
-                <path d="M3 9h18M9 3v18" strokeWidth="2"/>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
               </svg>
               <h3>Custom Applications</h3>
               <p>
@@ -64,9 +66,12 @@ export default function LandingPage() {
               </p>
             </div>
             <div className={styles.solutionCard}>
-              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" opacity="0.2"/>
+              <svg className={styles.solutionIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="12 2 15 10 23 12 15 14 12 22 9 14 1 12 9 10 12 2"/>
+                <path d="M5 3L7 7" opacity="0.6"/>
+                <path d="M19 3L17 7" opacity="0.6"/>
+                <path d="M5 21L7 17" opacity="0.6"/>
+                <path d="M19 21L17 17" opacity="0.6"/>
               </svg>
               <h3>AI Integration</h3>
               <p>
