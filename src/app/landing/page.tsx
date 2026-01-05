@@ -1,4 +1,59 @@
+import { Metadata } from 'next';
 import styles from "./landing.module.css";
+
+export const metadata: Metadata = {
+  title: 'AI-Powered Apps & Websites for Local Business | Scott McMurray - Northeast Ohio',
+  description: 'Custom digital solutions for Northeast Ohio businesses. AI-powered apps, modern websites, and automation services. Serving Trumbull, Mahoning & Columbiana Counties. Free strategy call available.',
+  keywords: [
+    'Northeast Ohio web developer',
+    'AI apps for small business',
+    'custom business applications',
+    'local web development Ohio',
+    'Trumbull County web developer',
+    'Mahoning County app developer',
+    'Columbiana County digital solutions',
+    'AI integration services',
+    'custom website development',
+    'small business automation',
+    'local business apps',
+    'Ohio custom software',
+  ],
+  authors: [{ name: 'Scott McMurray' }],
+  openGraph: {
+    title: 'AI-Powered Apps & Websites for Your Local Business',
+    description: 'Custom digital solutions designed to grow Northeast Ohio businesses. Built locally. Powered by AI. Focused on real results.',
+    url: 'https://scottymcmurray.com/landing',
+    siteName: 'Scott McMurray',
+    locale: 'en_US',
+    type: 'website',
+    images: [{
+      url: 'https://scottymcmurray.com/og-landing.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'AI-Powered Apps & Websites for Local Business - Scott McMurray',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI-Powered Apps & Websites for Your Local Business',
+    description: 'Custom digital solutions for Northeast Ohio. Built locally. Powered by AI. Free strategy call.',
+    images: ['https://scottymcmurray.com/og-landing.jpg'],
+  },
+  alternates: {
+    canonical: 'https://scottymcmurray.com/landing',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
 
 export default function LandingPage() {
   return (
@@ -174,6 +229,93 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://scottymcmurray.com/landing",
+            "name": "Scott McMurray - AI-Powered Digital Solutions",
+            "description": "Custom AI-powered apps, websites, and digital solutions for local businesses in Northeast Ohio",
+            "url": "https://scottymcmurray.com/landing",
+            "telephone": "",
+            "email": "scottymcmurray@gmail.com",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Trumbull County",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Ohio"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Mahoning County",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Ohio"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Columbiana County",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Ohio"
+                }
+              }
+            ],
+            "priceRange": "$$",
+            "openingHours": "Mo-Fr 09:00-17:00",
+            "serviceType": [
+              "Web Development",
+              "Mobile App Development",
+              "AI Integration",
+              "Custom Software Development",
+              "Business Automation"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Digital Solutions",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Modern Websites",
+                    "description": "Mobile-first, fast-loading sites that convert visitors into customers. SEO-optimized and built to reflect your brand."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Applications",
+                    "description": "Tailored apps that streamline your operations, engage customers, and solve your specific business challenges."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Integration",
+                    "description": "Automate workflows, personalize customer experiences, and unlock insights with AI solutions."
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "1"
+            }
+          })
+        }}
+      />
     </>
   );
 }
