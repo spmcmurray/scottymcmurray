@@ -3,7 +3,15 @@ import styles from './support.module.css'
 
 export const metadata: Metadata = {
   title: 'Support - Scott McMurray',
-  description: 'Get help with any of my applications. Contact information and support resources.',
+  description: 'Get help with any of my applications. Contact information and support resources for app assistance.',
+  openGraph: {
+    title: 'Support - Scott McMurray',
+    description: 'Get help with any of my applications',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/support',
+  },
 }
 
 export default function SupportPage() {

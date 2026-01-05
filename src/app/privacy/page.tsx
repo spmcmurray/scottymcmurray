@@ -3,7 +3,15 @@ import styles from '../legal.module.css'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Scott McMurray',
-  description: 'Privacy policy for Scott McMurray applications.',
+  description: 'Privacy policy for Scott McMurray applications. Learn how your data is collected, used, and protected.',
+  openGraph: {
+    title: 'Privacy Policy - Scott McMurray',
+    description: 'Privacy policy for Scott McMurray applications',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/privacy',
+  },
 }
 
 export default function PrivacyPage() {

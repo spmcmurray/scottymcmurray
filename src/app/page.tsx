@@ -1,5 +1,28 @@
 import styles from './page.module.css'
 import AppCard from '@/components/AppCard'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Scott McMurray - Simple Apps for a Simpler Life',
+  description: 'Self-taught developer from Ohio creating useful apps without addictive algorithms. Discover applications built to add value to your daily life.',
+  keywords: [
+    'app developer',
+    'indie apps',
+    'privacy-focused apps',
+    'simple apps',
+    'Ohio developer',
+    'Scott McMurray'
+  ],
+  openGraph: {
+    title: 'Scott McMurray - Simple Apps for a Simpler Life',
+    description: 'Self-taught developer creating useful apps without addictive algorithms',
+    type: 'website',
+    locale: 'en_US',
+  },
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function Home() {
   return (

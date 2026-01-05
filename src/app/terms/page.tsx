@@ -3,7 +3,15 @@ import styles from '../legal.module.css'
 
 export const metadata: Metadata = {
   title: 'Terms of Service - Scott McMurray',
-  description: 'Terms of service for Scott McMurray applications.',
+  description: 'Terms of service for Scott McMurray applications. Review the terms and conditions for using our apps.',
+  openGraph: {
+    title: 'Terms of Service - Scott McMurray',
+    description: 'Terms of service for Scott McMurray applications',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/terms',
+  },
 }
 
 export default function TermsPage() {
