@@ -249,28 +249,28 @@ export default function LandingPage() {
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Direct Communication</h4>
+                  <h3>Direct Communication</h3>
                   <p>No agencies. No middlemen. You talk directly with the person building your solution.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Understanding Your Market</h4>
+                  <h3>Understanding Your Market</h3>
                   <p>I know the local business landscape. What works for big cities may not work for your community—I get that.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Ongoing Support</h4>
+                  <h3>Ongoing Support</h3>
                   <p>Your success is my success. I stick around to help your business grow with technology.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>AI-First Approach</h4>
+                  <h3>AI-First Approach</h3>
                   <p>Built with modern practices and cutting-edge tools to deliver more value faster.</p>
                 </div>
               </div>
@@ -289,22 +289,22 @@ export default function LandingPage() {
           <div className={styles.stepsGrid}>
             <div className={styles.step}>
               <div className={styles.stepNumber}>1</div>
-              <h4>Free Strategy Call</h4>
+              <h3>Free Strategy Call</h3>
               <p>We discuss your goals, challenges, and what success looks like for your business.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>2</div>
-              <h4>Custom Proposal</h4>
+              <h3>Custom Proposal</h3>
               <p>I outline exactly what you need, why, and how it'll impact your bottom line.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>3</div>
-              <h4>Build & Iterate</h4>
+              <h3>Build & Iterate</h3>
               <p>You stay in the loop. Regular updates, feedback loops, and continuous improvement.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>4</div>
-              <h4>Launch & Grow</h4>
+              <h3>Launch & Grow</h3>
               <p>Go live and watch your business transform. Ongoing support keeps you ahead.</p>
             </div>
           </div>
