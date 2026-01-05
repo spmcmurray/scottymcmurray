@@ -241,11 +241,10 @@ export default function LandingPage() {
             "name": "Scott McMurray - AI-Powered Digital Solutions",
             "description": "Custom AI-powered apps, websites, and digital solutions for local businesses in Northeast Ohio",
             "url": "https://scottymcmurray.com/landing",
-            "telephone": "",
             "email": "scottymcmurray@gmail.com",
             "areaServed": [
               {
-                "@type": "City",
+                "@type": "AdministrativeArea",
                 "name": "Trumbull County",
                 "containedIn": {
                   "@type": "State",
@@ -253,7 +252,7 @@ export default function LandingPage() {
                 }
               },
               {
-                "@type": "City",
+                "@type": "AdministrativeArea",
                 "name": "Mahoning County",
                 "containedIn": {
                   "@type": "State",
@@ -261,7 +260,7 @@ export default function LandingPage() {
                 }
               },
               {
-                "@type": "City",
+                "@type": "AdministrativeArea",
                 "name": "Columbiana County",
                 "containedIn": {
                   "@type": "State",
@@ -307,11 +306,6 @@ export default function LandingPage() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "1"
             }
           })
         }}
