@@ -64,27 +64,26 @@ export default function LandingPage() {
         "name": "Scott McMurray - Web & App Development",
         "image": "https://scottymcmurray.com/og-image.jpg",
         "url": "https://scottymcmurray.com/landing",
-        "telephone": "",
         "email": "scottymcmurray@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "OH",
-          "addressCountry": "US",
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "Trumbull County"
-            },
-            {
-              "@type": "City",
-              "name": "Mahoning County"
-            },
-            {
-              "@type": "City",
-              "name": "Columbiana County"
-            }
-          ]
+          "addressCountry": "US"
         },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Trumbull County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Mahoning County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Columbiana County"
+          }
+        ],
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "41.0955",
