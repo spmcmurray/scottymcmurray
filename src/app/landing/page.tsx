@@ -1,8 +1,164 @@
+import { Metadata } from 'next'
 import styles from "./landing.module.css";
 
+export const metadata: Metadata = {
+  title: 'AI-Powered Apps & Websites for Ohio Local Businesses | Scott McMurray',
+  description: 'Custom AI-powered websites and applications for small businesses in Trumbull, Mahoning & Columbiana Counties. Local Ohio developer specializing in modern web development, custom apps, and AI integration.',
+  keywords: [
+    'Ohio web developer',
+    'local business websites',
+    'AI integration services',
+    'custom app development',
+    'Trumbull County web design',
+    'Mahoning County developer',
+    'Columbiana County apps',
+    'small business technology',
+    'Northeast Ohio developer',
+    'AI-powered business solutions',
+    'custom web applications',
+    'local software developer',
+  ],
+  authors: [{ name: 'Scott McMurray' }],
+  openGraph: {
+    title: 'AI-Powered Apps & Websites for Local Businesses | Scott McMurray',
+    description: 'Custom digital solutions designed to grow your business. Local Ohio developer serving Trumbull, Mahoning & Columbiana Counties with AI-powered websites and custom applications.',
+    url: 'https://scottymcmurray.com/landing',
+    siteName: 'Scott McMurray',
+    locale: 'en_US',
+    type: 'website',
+    images: [{
+      url: 'https://scottymcmurray.com/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Scott McMurray - AI-Powered Business Solutions',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI-Powered Apps & Websites for Local Businesses',
+    description: 'Custom digital solutions for small businesses in Northeast Ohio. Modern web development, custom apps, and AI integration.',
+  },
+  alternates: {
+    canonical: 'https://scottymcmurray.com/landing',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
 export default function LandingPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://scottymcmurray.com/#localbusiness",
+        "name": "Scott McMurray - Web & App Development",
+        "image": "https://scottymcmurray.com/og-image.jpg",
+        "url": "https://scottymcmurray.com/landing",
+        "email": "scottymcmurray@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "OH",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Trumbull County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Mahoning County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Columbiana County"
+          }
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "41.0955",
+          "longitude": "-80.6495"
+        },
+        "priceRange": "$$",
+        "description": "Custom AI-powered websites and applications for small businesses in Northeast Ohio. Local developer specializing in modern web development, custom apps, and AI integration.",
+        "sameAs": [
+          "https://scottymcmurray.com"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://scottymcmurray.com/#service",
+        "serviceType": "Web Development & AI Integration",
+        "provider": {
+          "@id": "https://scottymcmurray.com/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "Ohio"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Modern Website Development",
+                "description": "Mobile-first, fast-loading sites that convert visitors into customers. SEO-optimized and built to reflect your brand."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Application Development",
+                "description": "Tailored apps that streamline your operations, engage customers, and solve your specific business challenges."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Integration Services",
+                "description": "Automate workflows, personalize customer experiences, and unlock insights with AI that works for your business."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://scottymcmurray.com/landing#webpage",
+        "url": "https://scottymcmurray.com/landing",
+        "name": "AI-Powered Apps & Websites for Ohio Local Businesses",
+        "description": "Custom AI-powered websites and applications for small businesses in Trumbull, Mahoning & Columbiana Counties. Local Ohio developer specializing in modern web development, custom apps, and AI integration.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://scottymcmurray.com/#website",
+          "url": "https://scottymcmurray.com",
+          "name": "Scott McMurray"
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBackground}></div>
@@ -92,28 +248,28 @@ export default function LandingPage() {
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Direct Communication</h4>
+                  <h3>Direct Communication</h3>
                   <p>No agencies. No middlemen. You talk directly with the person building your solution.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Understanding Your Market</h4>
+                  <h3>Understanding Your Market</h3>
                   <p>I know the local business landscape. What works for big cities may not work for your community—I get that.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>Ongoing Support</h4>
+                  <h3>Ongoing Support</h3>
                   <p>Your success is my success. I stick around to help your business grow with technology.</p>
                 </div>
               </div>
               <div className={styles.benefitItem}>
                 <span className={styles.benefitNumber}>✓</span>
                 <div>
-                  <h4>AI-First Approach</h4>
+                  <h3>AI-First Approach</h3>
                   <p>Built with modern practices and cutting-edge tools to deliver more value faster.</p>
                 </div>
               </div>
@@ -132,22 +288,22 @@ export default function LandingPage() {
           <div className={styles.stepsGrid}>
             <div className={styles.step}>
               <div className={styles.stepNumber}>1</div>
-              <h4>Free Strategy Call</h4>
+              <h3>Free Strategy Call</h3>
               <p>We discuss your goals, challenges, and what success looks like for your business.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>2</div>
-              <h4>Custom Proposal</h4>
+              <h3>Custom Proposal</h3>
               <p>I outline exactly what you need, why, and how it'll impact your bottom line.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>3</div>
-              <h4>Build & Iterate</h4>
+              <h3>Build & Iterate</h3>
               <p>You stay in the loop. Regular updates, feedback loops, and continuous improvement.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>4</div>
-              <h4>Launch & Grow</h4>
+              <h3>Launch & Grow</h3>
               <p>Go live and watch your business transform. Ongoing support keeps you ahead.</p>
             </div>
           </div>
