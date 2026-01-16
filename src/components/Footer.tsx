@@ -20,6 +20,7 @@ export default function Footer() {
               <Link href="/apps/app1" className={styles.link}>TENFOLD</Link>
               <Link href="/apps/app2" className={styles.link}>Church Explorer</Link>
               <Link href="/apps/app3" className={styles.link}>RADICAL RUSH</Link>
+              <Link href="/apps/app4" className={styles.link}>Nexus AI</Link>
             </nav>
           </div>
 

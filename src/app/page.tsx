@@ -112,7 +112,7 @@ export default function Home() {
 
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <div className={styles.statNumber}>3</div>
+                <div className={styles.statNumber}>4</div>
                 <div className={styles.statLabel}>Apps in Portfolio</div>
               </div>
               <div className={styles.statCard}>
