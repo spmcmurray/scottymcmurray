@@ -78,6 +78,13 @@ export default function Home() {
               href="/apps/app3"
               gradient="linear-gradient(135deg, #e76f51 0%, #e9c46a 100%)"
             />
+            <AppCard
+              title="Nexus AI"
+              description="Unified LLM interface for seamless interaction with multiple AI models. Switch between ChatGPT, Claude, Gemini, and Grok."
+              platform="Web"
+              href="/apps/app4"
+              gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+            />
           </div>
         </div>
       </section>
