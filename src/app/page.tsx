@@ -3,20 +3,19 @@ import AppCard from '@/components/AppCard'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Scott McMurray - Data & AI Consultant for Manufacturing',
-  description: 'Data and AI consultant helping complex manufacturing businesses build BI reporting, ML forecasting, and AI adoption systems that operations teams actually use.',
+  title: 'Scott McMurray - Simple Apps for a Simpler Life',
+  description: 'Self-taught developer from Ohio creating useful apps without addictive algorithms. Discover applications built to add value to your daily life.',
   keywords: [
-    'data consultant',
-    'AI consultant',
-    'BI consulting',
-    'manufacturing AI',
-    'ML forecasting',
-    'AI adoption',
+    'app developer',
+    'indie apps',
+    'privacy-focused apps',
+    'simple apps',
+    'Ohio developer',
     'Scott McMurray'
   ],
   openGraph: {
-    title: 'Scott McMurray - Data & AI Consultant for Manufacturing',
-    description: 'I help complex manufacturing businesses turn scattered data into production BI and AI systems.',
+    title: 'Scott McMurray - Simple Apps for a Simpler Life',
+    description: 'Self-taught developer creating useful apps without addictive algorithms',
     type: 'website',
     locale: 'en_US',
   },
@@ -34,14 +33,14 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.heroContent}>
             <h1 className={`${styles.heroTitle} animate-in`}>
-              Data & AI consulting for <span className={styles.highlight}>complex manufacturing</span> businesses
+              Simple apps for a <span className={styles.highlight}>simpler life</span>
             </h1>
             <p className={`${styles.heroSubtitle} animate-in animate-in-delay-1`}>
-              I'm <strong>Scott McMurray</strong>. I bring hands-on BI and AI experience from complex manufacturing operations to businesses that can't yet justify a full-time hire for it.
+              I'm <strong>Scott McMurray</strong>, a self-taught developer from Ohio building apps that add value to people's lives, without the addictive algorithms of big tech.
             </p>
             <div className={`${styles.heroActions} animate-in animate-in-delay-2`}>
-              <a href="/work-with-me" className={styles.ctaPrimary}>View Services</a>
-              <a href="#apps" className={styles.ctaSecondary}>See My Work</a>
+              <a href="#apps" className={styles.ctaPrimary}>Explore My Apps</a>
+              <a href="#about" className={styles.ctaSecondary}>Learn More</a>
             </div>
           </div>
         </div>
@@ -51,9 +50,9 @@ export default function Home() {
       <section id="apps" className={styles.section}>
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Proof of Work</h2>
+            <h2 className={styles.sectionTitle}>My Applications</h2>
             <p className={styles.sectionDescription}>
-              Evidence I ship production software independently, start to finish — including an AI-powered product.
+              From fitness tracking to faith exploration to fast-paced fun, each app is built to add real value to your daily life.
             </p>
           </div>
 
@@ -97,33 +96,32 @@ export default function Home() {
             <div className={styles.aboutContent}>
               <h2 className={styles.sectionTitle}>About Me</h2>
               <p className={styles.aboutText}>
-                I'm a <strong>data and AI consultant</strong> with hands-on experience building BI reporting and
-                machine learning systems inside complex manufacturing operations. I specialize in closing the gap
-                between "we have the data but no insight" and production systems that operations teams actually use.
+                Based in <strong>Ohio</strong>, I'm a self-taught developer with a unique perspective on building software. 
+                As a husband and father, I understand the value of time—and the importance of building things that create real value.
               </p>
               <p className={styles.aboutText}>
-                I'm not a strategy consultant who hands you a slide deck and leaves, and I'm not a dev shop that
-                builds without understanding your business. I design the solution and <strong>build it myself</strong> —
-                forecasting models, adoption-ready dashboards, and AI tooling — end to end.
+                My approach combines <strong>business thinking with technical execution</strong>. I see problems through 
+                the lens of user needs and practical value, not just technical solutions. I build apps that people 
+                actually want to use, whether it's a fitness tool, a learning platform, or a fun game.
               </p>
               <p className={styles.aboutText}>
-                I also build software independently. Nexus AI, TENFOLD, and Church Explorer are proof I ship
-                production apps solo, start to finish — the same hands-on approach I bring to every engagement.
+                I embrace <strong>AI-first development practices</strong>, leveraging modern tools to build 
+                faster and smarter. This allows me to focus on creating apps that solve real problems.
               </p>
             </div>
 
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
                 <div className={styles.statNumber}>4</div>
-                <div className={styles.statLabel}>Apps Shipped Independently</div>
-              </div>
-              <div className={styles.statCard}>
-                <div className={styles.statNumber}>5</div>
-                <div className={styles.statLabel}>Service Areas</div>
+                <div className={styles.statLabel}>Apps in Portfolio</div>
               </div>
               <div className={styles.statCard}>
                 <div className={styles.statNumber}>100%</div>
                 <div className={styles.statLabel}>Self-Taught</div>
+              </div>
+              <div className={styles.statCard}>
+                <div className={styles.statNumber}>1</div>
+                <div className={styles.statLabel}>Mission</div>
               </div>
             </div>
           </div>
@@ -134,11 +132,11 @@ export default function Home() {
       <section className={styles.ctaSection}>
         <div className={styles.container}>
           <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Ready to Turn Data Into Decisions?</h2>
+            <h2 className={styles.ctaTitle}>Get in Touch</h2>
             <p className={styles.ctaText}>
-              Let's talk about how BI and AI can drive real results for your manufacturing business.
+              Questions about my apps? Want to connect? Feel free to reach out.
             </p>
-            <a href="/work-with-me" className={styles.ctaPrimary}>Get in Touch</a>
+            <a href="/support" className={styles.ctaPrimary}>Contact Me</a>
           </div>
         </div>
       </section>

@@ -2,21 +2,19 @@ import styles from "./work-with-me.module.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services - Data & AI Consulting for Manufacturing Businesses",
-  description: "Data and AI consulting for mid-market manufacturers: BI reporting, ML forecasting, AI adoption strategy and implementation, and custom AI tooling.",
+  title: "Work With Me - Custom Web Development & AI Solutions for Small Business",
+  description: "Partner with an experienced developer to build custom websites, applications, and AI solutions for your small business. Get modern technology that drives real results.",
   keywords: [
-    "data consultant",
-    "AI consultant",
-    "BI consulting",
-    "manufacturing AI",
-    "ML forecasting",
-    "AI adoption strategy",
-    "AI adoption implementation",
-    "business intelligence consultant"
+    "custom web development",
+    "small business websites",
+    "AI integration services",
+    "custom application development",
+    "business technology consultant",
+    "freelance web developer"
   ],
   openGraph: {
-    title: "Services - Data & AI Consulting for Manufacturing Businesses",
-    description: "BI reporting, ML forecasting, and AI adoption systems built for complex manufacturing operations",
+    title: "Work With Me - Transform Your Business with Modern Technology",
+    description: "Custom websites, apps, and AI solutions built specifically for your small business needs",
     type: "website",
     locale: "en_US",
   },
@@ -29,14 +27,14 @@ export default function WorkWithMePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Scott McMurray Data & AI Consulting",
-    "description": "BI reporting, ML forecasting, and AI adoption strategy and implementation for complex manufacturing businesses",
+    "name": "Scotty McMurray Web Development",
+    "description": "Custom web development, applications, and AI integration services for small businesses",
     "serviceType": [
-      "Business Intelligence Consulting",
-      "Machine Learning Forecasting",
-      "AI Adoption Strategy",
-      "AI Adoption Implementation",
-      "Custom Software Development"
+      "Web Development",
+      "Custom Application Development",
+      "AI Integration",
+      "Website Design",
+      "Technology Consulting"
     ],
     "priceRange": "$$"
   };
@@ -49,54 +47,40 @@ export default function WorkWithMePage() {
       />
       <main className={styles.container}>
         <section className={styles.hero}>
-          <h1>Data & AI Consulting for Complex Manufacturing Businesses</h1>
+          <h1>Transform Your Business with Modern Technology</h1>
           <p className={styles.subtitle}>
-            BI Systems • ML Forecasting • AI Adoption
+            Websites • Custom Apps • AI Integration
           </p>
           <p className={styles.value}>
-            Built for mid-market manufacturers who can't yet justify a full-time data hire
+            Built for small businesses that want to compete in the digital age
           </p>
           <a href="#contact" className={styles.ctaButton}>
             Get a Free Consultation
           </a>
         </section>
 
-        <section className={styles.services} id="services">
-          <h2>What I Offer</h2>
+        <section className={styles.services}>
+          <h2>What I Build</h2>
           <div className={styles.serviceGrid}>
             <div className={styles.serviceCard}>
-              <h3>📊 BI & Reporting Systems</h3>
+              <h3>🌐 Website Design & Development</h3>
               <p>
-                Dashboards and reporting pipelines built for how manufacturing operations actually
-                run — not generic templates bolted onto your ERP.
+                Modern, mobile-friendly websites that convert visitors into customers. 
+                Fast-loading, SEO-optimized, and built to reflect your unique brand identity.
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <h3>📈 ML Forecasting & Prediction</h3>
+              <h3>⚡ Custom Applications</h3>
               <p>
-                Demand, inventory, or production forecasting models designed for adoption,
-                not just accuracy on paper.
+                Tailored software solutions that streamline your operations and engage customers. 
+                From inventory management to customer portals—built exactly for your needs.
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <h3>🧭 AI Adoption Strategy</h3>
+              <h3>🤖 AI Integration</h3>
               <p>
-                A practical playbook for rolling out AI tools to teams that have never used
-                them — including the change management most consultants skip.
-              </p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>⚙️ AI Adoption Implementation</h3>
-              <p>
-                Hands-on rollout: training teams, embedding tools into daily workflows, and
-                making sure adoption actually sticks after the kickoff meeting ends.
-              </p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>🤖 No-Code/Low-Code AI Tooling</h3>
-              <p>
-                AI-powered internal tools your team can actually maintain, without hiring
-                a dedicated engineering staff.
+                Leverage AI to automate repetitive tasks, personalize customer experiences, 
+                and unlock data-driven insights that help you make smarter decisions.
               </p>
             </div>
           </div>
@@ -106,16 +90,16 @@ export default function WorkWithMePage() {
           <h2>Why Work With Me</h2>
           <ul className={styles.benefitsList}>
             <li>
-              <strong>I Build, Not Just Advise:</strong> I design the solution and build it myself — forecasting models, dashboards, and AI tools — end to end, not a slide deck handed to your team.
+              <strong>Direct Communication:</strong> No agencies or middlemen. You work directly with the developer building your solution.
             </li>
             <li>
-              <strong>Hands-On Manufacturing Experience:</strong> I've worked inside complex manufacturing operations, so I understand production constraints, not just spreadsheets.
+              <strong>Custom-Built Solutions:</strong> Every project is tailored to your specific business needs and goals.
             </li>
             <li>
-              <strong>Adoption-First Approach:</strong> A system nobody uses isn't a win. I design for the people who'll actually touch it every day.
+              <strong>Modern Technology:</strong> Built with the latest tools and best practices to ensure performance and scalability.
             </li>
             <li>
-              <strong>Direct Communication:</strong> No agencies or middlemen. You work directly with the person building your solution.
+              <strong>Ongoing Support:</strong> I'm here to help your business grow and adapt as your technology needs evolve.
             </li>
             <li>
               <strong>Transparent Process:</strong> Regular updates, clear communication, and no surprises on timeline or budget.
@@ -129,31 +113,31 @@ export default function WorkWithMePage() {
             <div className={styles.step}>
               <div className={styles.stepNumber}>1</div>
               <h3>Free Strategy Call</h3>
-              <p>We discuss your data, your goals, and where AI or BI could actually move the needle.</p>
+              <p>We discuss your goals, challenges, and what success looks like for your business.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>2</div>
               <h3>Custom Proposal</h3>
-              <p>I outline exactly what you need, why it matters, and how it impacts your operations.</p>
+              <p>I outline exactly what you need, why, and how it will impact your bottom line.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>3</div>
               <h3>Build & Iterate</h3>
-              <p>You stay in the loop with regular updates and feedback as the system takes shape.</p>
+              <p>You stay in the loop with regular updates, feedback opportunities, and continuous improvement.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>4</div>
-              <h3>Launch & Adopt</h3>
-              <p>Go live, with hands-on support to make sure your team actually adopts it — not just installs it.</p>
+              <h3>Launch & Grow</h3>
+              <p>Go live with your new solution. I provide ongoing support to ensure continued success.</p>
             </div>
           </div>
         </section>
 
         <section className={styles.contact} id="contact">
-          <h2>Ready to Turn Data Into Decisions?</h2>
+          <h2>Ready to Get Started?</h2>
           <p>
-            Let's talk about how BI and AI can drive real results for your manufacturing business.
-            The first consultation is completely free.
+            Let's talk about how modern technology can help your business stand out, 
+            streamline operations, and drive growth. The first consultation is completely free.
           </p>
           <a href="mailto:scottymcmurray@gmail.com" className={styles.ctaButton}>
             Schedule Your Free Call
