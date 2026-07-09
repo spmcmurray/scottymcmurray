@@ -10,17 +10,27 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.section}>
             <h3 className={styles.heading}>Scott McMurray</h3>
-            <p className={styles.tagline}>Simple apps for a simpler life</p>
+            <p className={styles.tagline}>Data & AI consulting for complex manufacturing businesses</p>
             <p className={styles.location}>Ohio, USA</p>
           </div>
 
           <div className={styles.section}>
-            <h4 className={styles.sectionTitle}>Apps</h4>
+            <h4 className={styles.sectionTitle}>Services</h4>
             <nav className={styles.links}>
+              <Link href="/work-with-me#services" className={styles.link}>BI & Reporting</Link>
+              <Link href="/work-with-me#services" className={styles.link}>ML Forecasting</Link>
+              <Link href="/work-with-me#services" className={styles.link}>AI Adoption</Link>
+              <Link href="/work-with-me#contact" className={styles.link}>Get in Touch</Link>
+            </nav>
+          </div>
+
+          <div className={styles.section}>
+            <h4 className={styles.sectionTitle}>Proof of Work</h4>
+            <nav className={styles.links}>
+              <Link href="/apps/app4" className={styles.link}>Nexus AI</Link>
               <Link href="/apps/app1" className={styles.link}>TENFOLD</Link>
               <Link href="/apps/app2" className={styles.link}>Church Explorer</Link>
               <Link href="/apps/app3" className={styles.link}>RADICAL RUSH</Link>
-              <Link href="/apps/app4" className={styles.link}>Nexus AI</Link>
             </nav>
           </div>
 

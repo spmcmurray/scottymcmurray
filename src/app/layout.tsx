@@ -23,13 +23,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Scott McMurray - App Developer',
-  description: 'Simple apps for a simpler life. Ohio-based self-taught developer building iOS apps and games focused on fitness, faith, and fun.',
-  keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'Church Explorer', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
+  title: 'Scott McMurray - Data & AI Consultant',
+  description: 'Data and AI consultant helping complex manufacturing businesses turn scattered data into production BI and AI systems — BI reporting, ML forecasting, and AI adoption.',
+  keywords: ['Scott McMurray', 'Scotty McMurray', 'data consultant', 'AI consultant', 'BI consulting', 'manufacturing AI', 'ML forecasting', 'AI adoption strategy', 'AI adoption implementation', 'business intelligence consultant'],
   authors: [{ name: 'Scott McMurray' }],
   openGraph: {
-    title: 'Scott McMurray - Simple Apps for a Simpler Life',
-    description: 'Simple apps for a simpler life. Ohio-based developer creating iOS apps and games that simplify your day or make it more fun.',
+    title: 'Scott McMurray - Data & AI Consultant',
+    description: 'I help complex manufacturing businesses turn scattered data into production BI and AI systems, without the overhead of a full data team.',
     url: 'https://scottymcmurray.com',
     siteName: 'Scott McMurray',
     locale: 'en_US',
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
       url: 'https://scottymcmurray.com/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Scott McMurray - Simple Apps for a Simpler Life',
+      alt: 'Scott McMurray - Data & AI Consultant',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Scott McMurray - Simple Apps for a Simpler Life',
-    description: 'Simple apps for a simpler life. iOS apps and games that simplify your day or make it more fun.',
+    title: 'Scott McMurray - Data & AI Consultant',
+    description: 'I help complex manufacturing businesses turn scattered data into production BI and AI systems.',
   },
 }
 
