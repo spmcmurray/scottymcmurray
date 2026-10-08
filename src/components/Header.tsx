@@ -33,6 +33,7 @@ export default function Header() {
         <nav className={styles.nav}>
           <Link href="/#apps" className={styles.navLink}>Apps</Link>
           <Link href="/#about" className={styles.navLink}>About</Link>
+          <Link href="/guides/ai-analyst-agent" className={styles.navLink}>Guide</Link>
           <Link href="/support" className={styles.navLink}>Support</Link>
         </nav>
       </div>

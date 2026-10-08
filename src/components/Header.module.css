@@ -91,3 +91,13 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 420px) {
+  .nav {
+    gap: 0.65rem;
+  }
+
+  .navLink {
+    font-size: 0.8rem;
+  }
+}

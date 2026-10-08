@@ -4,18 +4,20 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Scott McMurray - Simple Apps for a Simpler Life',
-  description: 'Self-taught developer from Ohio creating useful apps without addictive algorithms. Discover applications built to add value to your daily life.',
+  description: 'Self-taught developer from Ohio creating useful apps without addictive algorithms, and writing on AI-enabled analytics and analyst agent architecture.',
   keywords: [
     'app developer',
     'indie apps',
     'privacy-focused apps',
     'simple apps',
     'Ohio developer',
-    'Scott McMurray'
+    'Scott McMurray',
+    'AI analyst agent',
+    'self-service reporting'
   ],
   openGraph: {
     title: 'Scott McMurray - Simple Apps for a Simpler Life',
-    description: 'Self-taught developer creating useful apps without addictive algorithms',
+    description: 'Self-taught developer creating useful apps without addictive algorithms, and writing on AI-enabled analytics.',
     type: 'website',
     locale: 'en_US',
   },
@@ -38,7 +40,10 @@ export default function Home() {
             <p className={`${styles.heroSubtitle} animate-in animate-in-delay-1`}>
               I'm <strong>Scott McMurray</strong>, a self-taught developer from Ohio building apps that add value to people's lives, without the addictive algorithms of big tech.
             </p>
-            <div className={`${styles.heroActions} animate-in animate-in-delay-2`}>
+            <p className={`${styles.heroAside} animate-in animate-in-delay-2`}>
+              I also write about <a href="/guides/ai-analyst-agent">AI-enabled analytics and analyst agent architecture</a>.
+            </p>
+            <div className={`${styles.heroActions} animate-in animate-in-delay-3`}>
               <a href="#apps" className={styles.ctaPrimary}>Explore My Apps</a>
               <a href="#about" className={styles.ctaSecondary}>Learn More</a>
             </div>
@@ -108,6 +113,9 @@ export default function Home() {
                 I embrace <strong>AI-first development practices</strong>, leveraging modern tools to build 
                 faster and smarter. This allows me to focus on creating apps that solve real problems.
               </p>
+              <p className={styles.aboutText}>
+                That same practical streak shows up in <strong>AI-enabled analytics</strong>. An analyst agent should answer a business question by calling a governed semantic model, then show the measure it used. I wrote the practices up as a <a href="/guides/ai-analyst-agent">best-practices guide</a>.
+              </p>
             </div>
 
             <div className={styles.statsGrid}>
@@ -125,6 +133,43 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Skills</h2>
+            <p className={styles.sectionDescription}>
+              Product building, and the architecture behind AI-enabled analytics.
+            </p>
+          </div>
+
+          <div className={styles.skillGroups}>
+            <div className={styles.skillCard}>
+              <h3 className={styles.skillTitle}>Products</h3>
+              <ul className={styles.pills}>
+                <li>TypeScript</li>
+                <li>React Native and Expo</li>
+                <li>Next.js</li>
+                <li>iOS and web apps</li>
+              </ul>
+            </div>
+            <div className={styles.skillCard}>
+              <h3 className={styles.skillTitle}>AI-enabled analytics</h3>
+              <ul className={styles.pills}>
+                <li>Analyst agent architecture</li>
+                <li>Governed semantic models</li>
+                <li>MCP as a tool boundary</li>
+                <li>Self-service reporting</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className={styles.skillNote}>
+            <a href="/guides/ai-analyst-agent">Read the guide: Building an AI Analyst Agent</a>
+          </p>
         </div>
       </section>
 

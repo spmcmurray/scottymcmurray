@@ -25,6 +25,13 @@ export default function Footer() {
           </div>
 
           <div className={styles.section}>
+            <h4 className={styles.sectionTitle}>Writing</h4>
+            <nav className={styles.links}>
+              <Link href="/guides/ai-analyst-agent" className={styles.link}>AI Analyst Agent</Link>
+            </nav>
+          </div>
+
+          <div className={styles.section}>
             <h4 className={styles.sectionTitle}>Legal</h4>
             <nav className={styles.links}>
               <Link href="/privacy" className={styles.link}>Privacy Policy</Link>

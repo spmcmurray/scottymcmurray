@@ -63,13 +63,29 @@
 .heroSubtitle {
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: var(--color-text-muted);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-sm);
   line-height: 1.8;
 }
 
 .heroSubtitle strong {
   color: var(--color-text);
   font-weight: 600;
+}
+
+.heroAside {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.heroAside a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.heroAside a:hover {
+  color: var(--color-accent-bright);
 }
 
 .heroActions {
@@ -172,6 +188,68 @@
   font-style: italic;
 }
 
+.aboutText a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.aboutText a:hover {
+  color: var(--color-accent-bright);
+}
+
+.skillGroups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.skillCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-elevated);
+  border-radius: 12px;
+  padding: var(--space-md);
+}
+
+.skillTitle {
+  font-size: 1.35rem;
+  margin-bottom: var(--space-sm);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pills li {
+  border: 1px solid var(--color-surface-elevated);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.skillNote {
+  text-align: center;
+  margin: var(--space-md) 0 0;
+}
+
+.skillNote a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.skillNote a:hover {
+  color: var(--color-accent-bright);
+}
+
 .statsGrid {
   display: grid;
   gap: var(--space-sm);
@@ -241,6 +319,10 @@
   .aboutGrid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+
+  .skillGroups {
+    grid-template-columns: 1fr;
   }
 }
 
