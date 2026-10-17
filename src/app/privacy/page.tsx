@@ -19,7 +19,7 @@ export default function PrivacyPage() {
     <div className={styles.page}>
       <div className={styles.container}>
         <h1 className={styles.title}>Privacy Policy</h1>
-        <p className={styles.updated}>Last updated: November 24, 2025</p>
+        <p className={styles.updated}>Last updated: October 17, 2026</p>
 
         <div className={styles.content}>
           <section className={styles.section}>
@@ -61,9 +61,24 @@ export default function PrivacyPage() {
 
             <h3>What I Don't Collect</h3>
             <ul>
-              <li><strong>No Tracking:</strong> I do not use analytics, tracking pixels, or other monitoring technologies to track your behavior.</li>
+              <li><strong>No Tracking:</strong> No third-party analytics or ad tracking. TENFOLD's optional anonymized plan results are off unless you turn them on.</li>
               <li><strong>No Advertising:</strong> My apps do not contain advertisements or third-party advertising networks.</li>
               <li><strong>No Sale of Data:</strong> I will never sell, rent, or share your personal information with third parties for marketing purposes.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>TENFOLD</h2>
+            <p>
+              TENFOLD is a workout app. This section explains, in plain language, how it handles your information.
+            </p>
+            <ul>
+              <li><strong>Sign-in:</strong> Sign in with Apple or email. Sign-in is handled by Firebase Authentication (Google).</li>
+              <li><strong>Stored data:</strong> Workout history, training plans, strength scores, and profile name are stored in Google Firebase (Cloud Firestore), tied to your account.</li>
+              <li><strong>Apple Health:</strong> TENFOLD writes completed workouts to Apple Health and does not read any other Health data. Health data is never used for advertising and never shared with third parties.</li>
+              <li><strong>Optional anonymized plan results:</strong> Off by default, and sent only if you turn them on. They include plan length, sessions completed vs scheduled, weekly scores, and a coarse age range, sex, and experience level if entered. They never include name, email, photo, account ID, or device ID. Because these records are not linked to you, they cannot be identified or deleted per user.</li>
+              <li><strong>Subscriptions:</strong> TENFOLD Pro is billed by Apple through the App Store. No card or payment details are held by TENFOLD.</li>
+              <li><strong>Account deletion:</strong> You can delete your account and all associated data in the app (You tab → Delete account) or by emailing <a href="mailto:scottymcmurray@gmail.com">scottymcmurray@gmail.com</a>.</li>
             </ul>
           </section>
 
