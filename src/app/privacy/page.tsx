@@ -19,7 +19,7 @@ export default function PrivacyPage() {
     <div className={styles.page}>
       <div className={styles.container}>
         <h1 className={styles.title}>Privacy Policy</h1>
-        <p className={styles.updated}>Last updated: October 17, 2026</p>
+        <p className={styles.updated}>Last updated: November 10, 2026</p>
 
         <div className={styles.content}>
           <section className={styles.section}>
@@ -83,6 +83,24 @@ export default function PrivacyPage() {
           </section>
 
           <section className={styles.section}>
+            <h2>Clubhouse Golf</h2>
+            <p>
+              Clubhouse Golf is a golf GPS and scorecard app for iPhone. This section explains, in plain language, how it handles your information.
+            </p>
+            <ul>
+              <li><strong>Without an account:</strong> Your rounds and scores are saved on your iPhone. The app quietly creates an anonymous guest ID, with no name or email, so it can download course data and use voice scoring.</li>
+              <li><strong>With an account:</strong> Sign in with Apple or email. Sign-in and storage are handled by Supabase. Your email address (or Apple's private relay address), the name and handedness you enter, and your saved rounds and scores are stored with your account so they sync.</li>
+              <li><strong>Location:</strong> Used on your iPhone during a round to measure yardage to the green. When you look for courses near you, your location is sent to the course database to find them. It is not saved to your account and is not kept after the answer is returned.</li>
+              <li><strong>Voice scoring:</strong> What you say is turned into text on your iPhone. The audio never leaves your phone. Only the text of what you said, with the hole number and par, is sent to my server and on to Anthropic (Claude) to turn it into a score, putts, and other stats. I do not store the text.</li>
+              <li><strong>Course maps and scorecards:</strong> These come from OpenStreetMap contributors and course data providers. When you open a course the app does not have yet, my server may request its data from those providers. The server keeps a count of which course was requested, tied to your account or guest ID, to stay within usage limits.</li>
+              <li><strong>Handicap Index:</strong> If you type your Handicap Index into your profile, it stays on your iPhone and is not sent anywhere.</li>
+              <li><strong>Report an issue:</strong> This opens an email to me in your mail app. I only receive what you choose to send.</li>
+              <li><strong>Account deletion:</strong> You can delete your account and its synced rounds in the app (Profile → Delete account) or by emailing <a href="mailto:scottymcmurray@gmail.com">scottymcmurray@gmail.com</a>. Profile → Delete all rounds and scores clears this iPhone and any synced copy.</li>
+              <li><strong>No tracking:</strong> No advertising, no third-party analytics, and no sale of your information.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
             <h2>Data Storage and Transmission</h2>
             <p>
               <strong>iOS Apps:</strong> When you use cloud sync features, your data is transmitted securely 
@@ -109,6 +127,9 @@ export default function PrivacyPage() {
             <ul>
               <li><strong>Google Firebase/Firestore (iOS Apps):</strong> Used for cloud data storage and sync. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
               <li><strong>OpenAI (Web App):</strong> Used for AI-powered features. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a></li>
+              <li><strong>Supabase (Clubhouse Golf):</strong> Used for sign-in, account storage, and course data. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></li>
+              <li><strong>Anthropic (Clubhouse Golf):</strong> Used to turn voice-scoring text into a score. <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">Anthropic Privacy Policy</a></li>
+              <li><strong>Apple Maps and OpenStreetMap (Clubhouse Golf):</strong> Used for the course map. <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap Copyright</a></li>
               <li><strong>Apple iCloud (iOS Apps):</strong> May be used for device-level backups. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
             </ul>
             <p>
