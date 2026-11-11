@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} inner-wash`}>
       <div className={styles.container}>
         <h1 className={styles.title}>Privacy Policy</h1>
         <p className={styles.updated}>Last updated: November 10, 2026</p>

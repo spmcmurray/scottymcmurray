@@ -45,7 +45,7 @@ export default function WorkWithMePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <main className={styles.container}>
+      <main className={`${styles.container} inner-wash`}>
         <section className={styles.hero}>
           <h1>Transform Your Business with Modern Technology</h1>
           <p className={styles.subtitle}>

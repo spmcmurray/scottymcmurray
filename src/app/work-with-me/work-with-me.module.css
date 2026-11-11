@@ -1,6 +1,6 @@
 .container {
   font-family: var(--font-body);
-  padding: 0 var(--space-md) var(--space-xl) var(--space-md);
+  padding: var(--header-height) var(--space-md) var(--space-xl) var(--space-md);
   max-width: var(--max-width);
   margin: 0 auto;
   color: var(--color-text);
@@ -34,21 +34,19 @@
 
 .ctaButton {
   display: inline-block;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-bright) 100%);
-  color: var(--color-bg);
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
+  background: #fff;
+  color: #141a5c;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.05rem;
   margin-top: var(--space-sm);
-  transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  transition: transform 100ms ease-out;
 }
 
-.ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+.ctaButton:active {
+  transform: scale(0.97);
 }
 
 .services {
@@ -70,17 +68,14 @@
 }
 
 .serviceCard {
-  background: var(--color-surface);
-  border-radius: 12px;
+  background: rgba(8, 10, 32, 0.96);
+  border-radius: 1.25rem;
   padding: var(--space-lg);
-  transition: all var(--transition-base);
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .serviceCard:hover {
-  background: var(--color-surface-elevated);
-  border-color: var(--color-accent);
-  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .serviceCard h3 {
@@ -96,9 +91,9 @@
 }
 
 .benefits {
-  background: var(--color-surface);
+  background: transparent;
   border-radius: 1rem;
-  padding: var(--space-lg);
+  padding: var(--space-lg) 0;
   margin: var(--space-xl) 0;
 }
 
@@ -119,9 +114,9 @@
 .benefitsList li {
   padding: var(--space-md);
   margin-bottom: var(--space-sm);
-  background: var(--color-bg);
-  border-radius: 8px;
-  border-left: 4px solid var(--color-accent);
+  background: rgba(8, 10, 32, 0.96);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -160,9 +155,10 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
-  color: var(--color-bg);
-  font-weight: 700;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 500;
   font-size: 1.5rem;
   border-radius: 50%;
   margin-bottom: var(--space-md);
@@ -181,8 +177,9 @@
 }
 
 .contact {
-  background: linear-gradient(135deg, var(--color-surface-elevated) 0%, var(--color-surface) 100%);
-  border-radius: 1rem;
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
   margin: var(--space-xl) 0;

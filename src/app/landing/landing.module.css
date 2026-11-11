@@ -33,24 +33,24 @@
 
 .ctaButton {
   display: inline-block;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-bright) 100%);
-  color: var(--color-bg);
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
+  background: #fff;
+  color: #141a5c;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
   margin-top: var(--space-sm);
-  transition: all var(--transition-base);
+  transition: transform 100ms ease-out;
 }
 
-.ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+.ctaButton:active {
+  transform: scale(0.97);
 }
 
 .services {
-  background: var(--color-surface);
-  border-radius: 1rem;
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
   padding: var(--space-md) var(--space-sm);
   margin: var(--space-md) 0;
 }
@@ -85,8 +85,9 @@
 }
 
 .contact {
-  background: var(--color-surface-elevated);
-  border-radius: 1rem;
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
   padding: var(--space-md) var(--space-sm);
   text-align: center;
 }

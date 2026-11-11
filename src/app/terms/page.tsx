@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} inner-wash`}>
       <div className={styles.container}>
         <h1 className={styles.title}>Terms of Service</h1>
         <p className={styles.updated}>Last updated: November 24, 2025</p>

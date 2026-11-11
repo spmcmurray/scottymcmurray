@@ -46,7 +46,7 @@ export default function AiAnalystGuidePage() {
   }
 
   return (
-    <article className={styles.page}>
+    <article className={`${styles.page} inner-wash`}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

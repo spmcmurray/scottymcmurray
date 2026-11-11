@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} inner-wash`}>
       <section className={styles.hero}>
         <div className={styles.container}>
           <h1 className={`${styles.title} animate-in`}>Contact</h1>

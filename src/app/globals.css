@@ -1,14 +1,14 @@
 :root {
   /* Inner pages keep the existing palette. The homepage uses Afterglow. */
-  --color-bg: #0a0a0a;
-  --color-surface: #1a1612;
-  --color-surface-elevated: #2a2218;
-  --color-text: #e8e3d8;
-  --color-text-muted: #a39988;
-  --color-accent: #ff6b35;
-  --color-accent-bright: #ff8c5a;
-  --color-accent-dim: #cc5429;
-  --color-secondary: #f4a261;
+  --color-bg: #070a2e;
+  --color-surface: #12163f;
+  --color-surface-elevated: #1c2254;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.78);
+  --color-accent: #ffffff;
+  --color-accent-bright: #ffe6f4;
+  --color-accent-dim: #c9c6ff;
+  --color-secondary: #ffb3d8;
   --color-tertiary: #2a9d8f;
   
   /* Typography — Inter everywhere, JetBrains Mono for code and mono labels */

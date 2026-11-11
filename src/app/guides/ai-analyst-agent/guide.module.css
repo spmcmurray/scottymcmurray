@@ -3,11 +3,8 @@
 }
 
 .hero {
-  padding: var(--space-xl) 0 var(--space-lg);
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255, 107, 53, 0.14) 0%, transparent 55%),
-    radial-gradient(circle at 85% 0%, rgba(42, 157, 143, 0.1) 0%, transparent 50%),
-    linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
+  padding: 4rem 0 2rem;
+  background: transparent;
 }
 
 .heroInner {
@@ -28,12 +25,11 @@
 
 .title {
   font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
   line-height: 1.05;
   margin-bottom: var(--space-sm);
-  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
 }
 
 .subtitle {
@@ -51,9 +47,12 @@
 }
 
 .layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: var(--space-lg) var(--space-md) var(--space-xl);
+  max-width: 42rem;
+  margin: 0 auto 3rem;
+  padding: 2rem 1.75rem 2.5rem;
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
 }
 
 .toc {
