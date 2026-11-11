@@ -1183,7 +1183,12 @@ a.ag-tag:hover,
 
   .ag .signature { font-size: 10.5px; letter-spacing: 0.16em; }
   .ag .copy { margin-top: 86px; }
-  .ag h1 { font-size: 50px; white-space: normal; max-width: 10ch; }
+  .ag h1 {
+    font-size: 50px;
+    white-space: normal;
+    max-width: 100%;
+    text-wrap: balance;
+  }
   .ag .lede { font-size: 15.5px; max-width: 330px; }
   .ag .ctas { margin-top: 22px; }
   .ag .pill { height: 42px; padding: 0 18px; font-size: 14px; }
