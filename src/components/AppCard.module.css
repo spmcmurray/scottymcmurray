@@ -75,3 +75,11 @@
     padding: var(--space-sm);
   }
 }
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 11px;
+  display: block;
+  margin-bottom: var(--space-sm);
+}

@@ -21,6 +21,7 @@ export default function Footer() {
               <Link href="/apps/app2" className={styles.link}>Church Explorer</Link>
               <Link href="/apps/app3" className={styles.link}>RADICAL RUSH</Link>
               <Link href="/apps/app4" className={styles.link}>Nexus AI</Link>
+              <Link href="/apps/app5" className={styles.link}>Clubhouse Golf</Link>
             </nav>
           </div>
 

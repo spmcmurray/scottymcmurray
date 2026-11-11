@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>My Applications</h2>
             <p className={styles.sectionDescription}>
-              From fitness tracking to faith exploration to fast-paced fun, each app is built to add real value to your daily life.
+              From fitness tracking to faith exploration to golf and fast-paced fun, each app is built to add real value to your daily life.
             </p>
           </div>
 
@@ -90,6 +90,14 @@ export default function Home() {
               href="/apps/app4"
               gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
             />
+            <AppCard
+              title="Clubhouse Golf"
+              description="Golf GPS and scorecard for iPhone. Live yardages, course maps, and voice scoring: say your score and it's on the card."
+              platform="iOS"
+              href="/apps/app5"
+              gradient="linear-gradient(135deg, #e5231f 0%, #4f9d4a 100%)"
+              icon="/clubhouse-golf-icon.png"
+            />
           </div>
         </div>
       </section>
@@ -120,7 +128,7 @@ export default function Home() {
 
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <div className={styles.statNumber}>4</div>
+                <div className={styles.statNumber}>5</div>
                 <div className={styles.statLabel}>Apps in Portfolio</div>
               </div>
               <div className={styles.statCard}>
