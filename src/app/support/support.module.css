@@ -55,8 +55,21 @@
 }
 
 .contactIcon {
-  font-size: 3rem;
-  margin-bottom: var(--space-sm);
+  width: 32px;
+  height: 32px;
+  margin: 0 auto var(--space-sm);
+  color: #fff;
+}
+
+.contactIcon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contactCard h2 {

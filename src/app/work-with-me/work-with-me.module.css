@@ -82,6 +82,20 @@
   color: var(--color-text);
   margin-bottom: var(--space-sm);
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.serviceCard h3 svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .serviceCard p {

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -43,35 +44,35 @@ export default function AppThreePage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎯</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="target" /></div>
               <h3>Classic & Zen Modes</h3>
               <p>Fast-paced Classic mode or relaxed Zen mode. Six gesture types: tap, hold, swipe up, down, left, right.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⚡</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="zap" /></div>
               <h3>One-Mistake Intensity</h3>
               <p>One mistake ends the run. Accelerating tempo keeps you sharp and focused.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🏆</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="trophy" /></div>
               <h3>Apple GameCenter</h3>
               <p>Global leaderboards and achievements via GameCenter integration. Compete worldwide!</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📱</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="phone" /></div>
               <h3>Haptic Feedback</h3>
               <p>Feel every correct move and alert with responsive haptic feedback.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>✨</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="spark" /></div>
               <h3>Beautiful UI</h3>
               <p>Motion R branding, smooth transitions, and floating particle effects.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎮</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="gamepad" /></div>
               <h3>Built with React Native</h3>
               <p>Cross-platform development using Expo, TypeScript, and modern mobile best practices.</p>
             </div>
@@ -79,7 +80,7 @@ export default function AppThreePage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>

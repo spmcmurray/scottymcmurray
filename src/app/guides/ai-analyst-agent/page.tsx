@@ -68,7 +68,7 @@ export default function AiAnalystGuidePage() {
       </header>
 
       <div className={styles.layout}>
-        <nav className={styles.toc} aria-label="In this guide">
+        <nav className={styles.toc} data-rise aria-label="In this guide">
           <p className={styles.tocTitle}>In this guide</p>
           <ol className={styles.tocList}>
             <li><a href="#architecture">Reference architecture</a></li>
@@ -83,7 +83,7 @@ export default function AiAnalystGuidePage() {
           </ol>
         </nav>
 
-        <section className={styles.section}>
+        <section className={styles.section} data-rise>
           <p>
             Trustworthy self-service reporting is sometimes called the holy grail: someone asks a question in plain English and gets a number the organization already stands behind. The chat window is the easy part. The hard part is a short, governed path from that question to a measure that already has a definition, a grain, and a permission check.
           </p>
@@ -92,7 +92,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="architecture" className={styles.section}>
+        <section id="architecture" className={styles.section} data-rise>
           <h2>The reference architecture</h2>
           <p>
             Four hops are enough. A person talks to an assistant. The assistant may only fetch numbers by calling tools. Those tools talk to a semantic model. The semantic model talks to the data platform, under the caller&apos;s permissions.
@@ -154,7 +154,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="semantic-layer" className={styles.section}>
+        <section id="semantic-layer" className={styles.section} data-rise>
           <h2>The semantic layer matters more than the model</h2>
           <p>
             A strong language model on a messy schema will sound sure and be wrong. A modest model on a clean semantic layer will reuse definitions the business already argued about and wrote down. Spend the effort on the layer.
@@ -176,7 +176,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="naming" className={styles.section}>
+        <section id="naming" className={styles.section} data-rise>
           <h2>Name measures so the agent picks the right one</h2>
           <p>
             The agent does not know your tribal vocabulary. It knows the strings you published. Names that made sense inside a modeling tool become a bug the moment a person says &quot;how were sales last month?&quot;
@@ -236,7 +236,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="split-sources" className={styles.section}>
+        <section id="split-sources" className={styles.section} data-rise>
           <h2>When the semantic layer is split</h2>
           <p>
             Plenty of environments are mid-migration. Some definitions still live on a legacy operational system, such as an ERP. Others live on the curated tables of a modern warehouse, the layer often called gold. Pretending those are one model, on day one, is how the agent stitches together two truths and calls it an answer.
@@ -271,7 +271,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="security" className={styles.section}>
+        <section id="security" className={styles.section} data-rise>
           <h2>Pass security and row-level permissions through</h2>
           <p>
             The agent must not become a side door. Row-level security and object-level security belong in the semantic model, applied to the person who asked. The assistant does not reimplement them in a prompt.
@@ -298,7 +298,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="guardrails" className={styles.section}>
+        <section id="guardrails" className={styles.section} data-rise>
           <h2>Guardrails against hallucinated numbers</h2>
           <p>
             The failure mode that matters is a fluent sentence with a fabricated figure. The rule is simple: if a tool did not return the number, the assistant does not say the number. It may explain, ask a question, or decline. It may not estimate a governed metric to be helpful.
@@ -338,7 +338,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="start-small" className={styles.section}>
+        <section id="start-small" className={styles.section} data-rise>
           <h2>Start with a narrow first version</h2>
           <p>
             The temptation is to point the assistant at every measure you have, because the model can &quot;handle it.&quot; It can talk about all of them. It cannot be right about all of them. I would rather ship a narrow version that declines half the questions than a wide one that answers them with the wrong measure.
@@ -355,7 +355,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="testing" className={styles.section}>
+        <section id="testing" className={styles.section} data-rise>
           <h2>Test with questions that already have answers</h2>
           <p>
             Build a small bank of questions before you invite anyone else. For each one, record the expected behavior from the semantic model itself, not from memory and not from the assistant: which measure, which filters, and whether the correct behavior is to answer, to clarify, or to decline. Store the expected value next to the question when an answer is expected. Recompute it in the model when the model changes.
@@ -375,7 +375,7 @@ export default function AiAnalystGuidePage() {
           </p>
         </section>
 
-        <section id="adoption" className={styles.section}>
+        <section id="adoption" className={styles.section} data-rise>
           <h2>Adoption is a product problem</h2>
           <p>
             People do not adopt an analyst agent because the architecture diagram was clean. They adopt it when a question they already ask comes back with a number they can defend in a meeting. Plan for that, in this order.

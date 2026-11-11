@@ -22,7 +22,7 @@ export default function TermsPage() {
         <p className={styles.updated}>Last updated: November 24, 2025</p>
 
         <div className={styles.content}>
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Agreement to Terms</h2>
             <p>
               By accessing or using any application created by Scott McMurray ("I", "me", or "my"), you agree 
@@ -30,7 +30,7 @@ export default function TermsPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Use License</h2>
             <p>
               I grant you a personal, non-exclusive, non-transferable license to use my applications for your 
@@ -46,7 +46,7 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Disclaimer of Warranties</h2>
             <p>
               My applications are provided "as is" without warranties of any kind, either express or implied. 
@@ -60,7 +60,7 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Limitation of Liability</h2>
             <p>
               To the maximum extent permitted by law, I shall not be liable for any indirect, incidental, 
@@ -69,7 +69,7 @@ export default function TermsPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>User Content</h2>
             <p>
               You retain all rights to any content you create using my applications. I do not claim ownership 
@@ -77,7 +77,7 @@ export default function TermsPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Updates and Modifications</h2>
             <p>
               I reserve the right to modify, suspend, or discontinue any application at any time without notice. 
@@ -86,7 +86,7 @@ export default function TermsPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Apple App Store</h2>
             <p>
               For applications distributed through the Apple App Store, you acknowledge and agree that:
@@ -100,7 +100,7 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Governing Law</h2>
             <p>
               These terms shall be governed by and construed in accordance with the laws of the State of Ohio, 
@@ -108,7 +108,7 @@ export default function TermsPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Contact</h2>
             <p>
               If you have any questions about these Terms of Service, please contact me at:

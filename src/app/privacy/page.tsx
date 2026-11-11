@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <p className={styles.updated}>Last updated: November 10, 2026</p>
 
         <div className={styles.content}>
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Introduction</h2>
             <p>
               At Scott McMurray ("I", "me", or "my"), I take your privacy seriously. This Privacy Policy 
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Information Collection</h2>
             <p>
               My applications are designed with privacy as a core principle. I only collect data that is 
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>TENFOLD</h2>
             <p>
               TENFOLD is a workout app. This section explains, in plain language, how it handles your information.
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Clubhouse Golf</h2>
             <p>
               Clubhouse Golf is a golf GPS and scorecard app for iPhone. This section explains, in plain language, how it handles your information.
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Data Storage and Transmission</h2>
             <p>
               <strong>iOS Apps:</strong> When you use cloud sync features, your data is transmitted securely 
@@ -118,7 +118,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Third-Party Services</h2>
             <p>
               My applications integrate with the following third-party services. When you use my apps, 
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Security</h2>
             <p>
               I take the security of your data seriously and implement appropriate measures to protect it:
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Data Retention and Deletion</h2>
             <p>
               <strong>Your Rights:</strong> You have the right to access, modify, or delete your data at any time.
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Children's Privacy</h2>
             <p>
               My applications do not knowingly collect any information from children under the age of 13. 
@@ -176,7 +176,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Changes to This Policy</h2>
             <p>
               I may update this Privacy Policy from time to time. Any changes will be posted on this page with 
@@ -185,7 +185,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section className={styles.section} data-rise>
             <h2>Contact</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact me at:

@@ -83,7 +83,7 @@ export default function LandingPage() {
             Get a Free Consultation
           </a>
         </section>
-        <section className={styles.services}>
+        <section className={styles.services} data-rise>
         <h2>What I Offer</h2>
         <ul>
           <li>
@@ -97,13 +97,13 @@ export default function LandingPage() {
           </li>
         </ul>
       </section>
-      <section className={styles.localSection}>
+      <section className={styles.localSection} data-rise>
         <h2>Local Expertise</h2>
         <p>
           I work directly with businesses in <span className={styles.county}>Trumbull</span>, <span className={styles.county}>Mahoning</span>, and <span className={styles.county}>Columbiana</span> counties. Get personal service from someone who understands your market.
         </p>
       </section>
-      <section className={styles.contact} id="contact">
+      <section className={styles.contact} id="contact" data-rise>
         <h2>Ready to Get Started?</h2>
         <p>
           Let's talk about how technology can help your business grow. Contact me for a free, no-pressure consultation.
