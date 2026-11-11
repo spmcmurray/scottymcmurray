@@ -7,13 +7,15 @@ interface AppCardProps {
   platform: 'iOS' | 'Web'
   href: string
   gradient: string
+  icon?: string
 }
 
-export default function AppCard({ title, description, platform, href, gradient }: AppCardProps) {
+export default function AppCard({ title, description, platform, href, gradient, icon }: AppCardProps) {
   return (
     <Link href={href} className={styles.card}>
       <div className={styles.cardGradient} style={{ background: gradient }}></div>
       <div className={styles.cardContent}>
+        {icon && <img src={icon} alt="" className={styles.cardIcon} width={48} height={48} />}
         <div className={styles.platformBadge}>{platform}</div>
         <h3 className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardDescription}>{description}</p>
