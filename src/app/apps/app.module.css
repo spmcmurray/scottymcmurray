@@ -72,7 +72,7 @@
   padding: 0.9rem 1.4rem;
   font-weight: 600;
   border-radius: 999px;
-  transition: transform 100ms ease-out;
+  transition: transform 180ms ease-out;
 }
 
 .downloadButton,
@@ -93,6 +93,7 @@
 .supportButton:active,
 .ctaButton:active {
   transform: scale(0.97);
+  transition-duration: 100ms;
 }
 
 /* Phone Mockup */

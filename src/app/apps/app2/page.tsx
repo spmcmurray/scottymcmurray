@@ -52,34 +52,34 @@ export default function AppTwoPage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>🤖</div>
               <h3>AI-Powered Learning</h3>
               <p>Interactive lessons that adapt to your questions and curiosity using advanced AI.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>⏰</div>
               <h3>Microlearning Format</h3>
               <p>Short, focused lessons that fit into your daily routine. Learn in just a few minutes.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>📚</div>
               <h3>Church History & Theology</h3>
               <p>Explore centuries of Christian tradition, from early church to modern movements.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>💬</div>
               <h3>Ask Questions</h3>
               <p>Curious about something? Ask questions and get thoughtful, informed responses.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>📖</div>
               <h3>Biblical Context</h3>
               <p>Learn how theology developed alongside scripture and historical events.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>🌱</div>
               <h3>Grow Your Faith</h3>
               <p>Build a deeper understanding of Christian beliefs and practices over time.</p>
@@ -88,7 +88,7 @@ export default function AppTwoPage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>

@@ -43,34 +43,34 @@ export default function AppOnePage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>⏱️</div>
               <h3>Just 10 Minutes</h3>
               <p>Quick, effective workouts designed to fit into any schedule. No more excuses.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>🏠</div>
               <h3>No Equipment Needed</h3>
               <p>All exercises use just your bodyweight. Work out anywhere, anytime.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>📱</div>
               <h3>Cross-Platform</h3>
               <p>Built with Expo for iOS, Android, and web. File-based routing with Expo Router.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>📊</div>
               <h3>Track Progress</h3>
               <p>See your workout streak and stay motivated with simple progress tracking.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>⚙️</div>
               <h3>Modern Tech Stack</h3>
               <p>TypeScript, React Native, and Xcode Cloud CI/CD for streamlined deployment.</p>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}>💪</div>
               <h3>All Fitness Levels</h3>
               <p>Workouts are designed for everyone, whether you're just starting or staying active.</p>
@@ -79,7 +79,7 @@ export default function AppOnePage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>
