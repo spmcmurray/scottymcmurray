@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -52,35 +53,35 @@ export default function AppTwoPage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🤖</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="bot" /></div>
               <h3>Lessons that answer back</h3>
               <p>Get stuck on something and ask. The lesson picks up from your question.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⏰</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="clock" /></div>
               <h3>A few minutes at a time</h3>
               <p>One topic per lesson, so you can finish it before your coffee gets cold.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📚</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="books" /></div>
               <h3>Church History & Theology</h3>
               <p>From the early church through the Reformation and into the present day.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>💬</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="message" /></div>
               <h3>Ask anything</h3>
               <p>Wondering why a council met, or what a word meant back then? Just ask.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📖</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="book" /></div>
               <h3>Scripture in context</h3>
               <p>See how doctrine took shape alongside scripture and the events around it.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🌱</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="sprout" /></div>
               <h3>It adds up</h3>
               <p>A little each day gets you a much better picture of what Christians believe and why.</p>
             </div>
@@ -88,7 +89,7 @@ export default function AppTwoPage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -43,35 +44,35 @@ export default function AppThreePage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎯</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="target" /></div>
               <h3>Classic & Zen Modes</h3>
               <p>Classic speeds up until you slip. Zen lets you play without the pressure. Six gestures: tap, hold, and swipe up, down, left or right.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⚡</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="zap" /></div>
               <h3>One mistake ends it</h3>
               <p>The tempo keeps climbing, so every round ends a little differently.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🏆</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="trophy" /></div>
               <h3>Apple GameCenter</h3>
               <p>Global leaderboards and achievements through Game Center, so you can see how you stack up.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📱</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="phone" /></div>
               <h3>Haptics</h3>
               <p>You feel every hit and every warning in your hand, so you can play without staring.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>✨</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="spark" /></div>
               <h3>Looks the part</h3>
               <p>Bold colors, quick transitions and a few floating particles.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎮</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="gamepad" /></div>
               <h3>Built with Expo</h3>
               <p>React Native and TypeScript under the hood.</p>
             </div>
@@ -79,7 +80,7 @@ export default function AppThreePage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>

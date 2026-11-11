@@ -25,7 +25,7 @@
   
   /* Layout */
   --max-width: 1200px;
-  --header-height: 4.75rem;
+  --header-height: calc(4.75rem + env(safe-area-inset-top, 0px));
   
   /* Animations */
   --transition-fast: 150ms ease-in-out;
@@ -37,6 +37,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 0.75rem);
 }
 
 html,
@@ -168,8 +173,10 @@ code {
   }
 }
 
+/* Titles used to fade up from invisible. They stay visible on the first
+   paint so above-the-fold text is not hidden while an animation starts. */
 .animate-in {
-  animation: fadeInUp var(--transition-slow) backwards;
+  animation: none;
 }
 
 .animate-in-delay-1 {

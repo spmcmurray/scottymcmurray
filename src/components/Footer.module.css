@@ -45,9 +45,16 @@
   width: fit-content;
 }
 
-.grid a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+@media (hover: hover) and (pointer: fine) {
+  .grid a {
+    transition: transform 180ms ease-out;
+  }
+
+  .grid a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transform: translateY(-1px);
+  }
 }
 
 .bottom {

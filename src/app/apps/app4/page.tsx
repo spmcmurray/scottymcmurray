@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -52,35 +53,35 @@ export default function AppFourPage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🤖</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="bot" /></div>
               <h3>Four models</h3>
               <p>ChatGPT, Claude, Gemini and Grok, side by side in one place.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🔄</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="refresh" /></div>
               <h3>Switch mid-chat</h3>
               <p>Not happy with an answer? Try another model without starting over.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>💬</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="message" /></div>
               <h3>One window</h3>
               <p>The same layout every time, whichever model you’re talking to.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🌐</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="globe" /></div>
               <h3>Web-Based</h3>
               <p>Open it in any browser, on your phone or your laptop. Nothing to install.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⚡</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="zap" /></div>
               <h3>Quick</h3>
               <p>It loads fast and stays out of the way while you type.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎯</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="target" /></div>
               <h3>Fewer tabs</h3>
               <p>Stop bouncing between four sites to compare answers.</p>
             </div>
@@ -88,7 +89,7 @@ export default function AppFourPage() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.ctaSection}`}>
+      <section className={`${styles.section} ${styles.ctaSection}`} data-rise>
         <div className={styles.container}>
           <h2 className={styles.ctaTitle}>Tired of juggling four AI tabs?</h2>
           <p className={styles.ctaDescription}>

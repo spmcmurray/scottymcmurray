@@ -137,11 +137,14 @@
 }
 
 .hero-nav {
-  position: absolute;
-  z-index: 6;
-  top: 28px;
-  left: var(--pad, 56px);
-  right: var(--pad, 56px);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: calc(28px + env(safe-area-inset-top, 0px)) var(--pad, 56px) 0;
+  background: transparent;
+  transition: background-color 200ms ease-out;
 }
 
 .hero-nav .navpill {
@@ -157,7 +160,7 @@
   right: 0;
   z-index: 1000;
   height: var(--header-height);
-  padding: 0 1.75rem;
+  padding: env(safe-area-inset-top, 0px) max(1.75rem, env(safe-area-inset-right, 0px)) 0 max(1.75rem, env(safe-area-inset-left, 0px));
   background: rgba(7, 10, 46, 0.94);
 }
 
@@ -202,21 +205,27 @@
   flex-direction: column;
   position: absolute;
   top: calc(100% + 8px);
-  left: 16px;
-  right: 16px;
+  left: max(16px, env(safe-area-inset-left, 0px));
+  right: max(16px, env(safe-area-inset-right, 0px));
   padding: 8px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
   border-radius: 18px;
   background: rgba(7, 10, 46, 0.98);
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.6);
+  max-height: calc(100dvh - var(--header-height) - 24px);
+  overflow: auto;
 }
 
 .mobile-nav a {
   color: #fff;
   text-decoration: none;
-  padding: 12px 14px;
+  min-height: 48px;
+  padding: 14px 16px;
   border-radius: 12px;
-  font-size: 15px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-nav a:hover,
@@ -233,7 +242,7 @@
 
 @media (max-width: 720px) {
   .bar-nav {
-    padding: 0 16px;
+    padding: env(safe-area-inset-top, 0px) 16px 0;
   }
 
   .bar-nav .navpill {
@@ -249,13 +258,17 @@
 
 @media (max-width: 600px) {
   .hero-nav {
-    top: 16px;
-    left: 20px;
-    right: 20px;
+    padding: calc(16px + env(safe-area-inset-top, 0px)) 20px 0;
   }
 
   .hero-nav .navpill {
     display: none;
+  }
+
+  .hero-nav .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
   }
 }
 
@@ -1333,7 +1346,7 @@ a.ag-tag:hover,
 .navpill a,
 .dock a,
 .phead a.ico {
-  transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out, background-color 180ms ease-out, color 180ms ease-out;
 }
 
 .pill:active,
@@ -1371,6 +1384,132 @@ a.ag-tag:hover,
   .ag .settle-fade,
   .ag .settle {
     transition-duration: 280ms !important;
+  }
+}
+
+/* ---------- motion: hover, scroll reveals, page fades ---------- */
+
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 0.75rem);
+}
+
+.hero-nav.is-scrolled {
+  background: #070a2e;
+  padding-bottom: 12px;
+}
+
+
+.rise {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 560ms ease-out, transform 560ms ease-out;
+  transition-delay: var(--d, 0ms);
+}
+
+.rise.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+#main.page-fade {
+  animation: page-fade 220ms ease-out;
+}
+
+@keyframes page-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 180ms ease-out both vt-out;
+}
+
+::view-transition-new(root) {
+  animation: 240ms ease-out both vt-in;
+}
+
+@keyframes vt-out {
+  to { opacity: 0; }
+}
+
+@keyframes vt-in {
+  from { opacity: 0; }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pill,
+  .menu-btn,
+  .dock a,
+  .phead a.ico,
+  .wordmark,
+  [data-lift],
+  .ag .stat,
+  .ag .cap,
+  .ag .panel,
+  .ag .note,
+  .ag .guide,
+  a[class*="downloadButton"],
+  a[class*="learnButton"],
+  a[class*="supportButton"],
+  a[class*="ctaButton"],
+  a[class*="contactLink"] {
+    transition: transform 180ms ease-out, background-color 180ms ease-out, border-color 180ms ease-out, color 180ms ease-out;
+  }
+
+  .pill:hover,
+  .menu-btn:hover,
+  .dock a:hover,
+  .phead a.ico:hover,
+  .wordmark:hover,
+  [data-lift]:hover,
+  .ag .stat:hover,
+  .ag .cap:hover,
+  .ag .panel:hover,
+  .ag .note:hover,
+  .ag .guide:hover,
+  a[class*="downloadButton"]:hover,
+  a[class*="learnButton"]:hover,
+  a[class*="supportButton"]:hover,
+  a[class*="ctaButton"]:hover,
+  a[class*="contactLink"]:hover {
+    transform: translateY(-2px);
+  }
+
+  .navpill a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .pill:active,
+  .menu-btn:active,
+  .navpill a:active,
+  .dock a:active,
+  .phead a.ico:active,
+  a[class*="downloadButton"]:active,
+  a[class*="learnButton"]:active,
+  a[class*="supportButton"]:active,
+  a[class*="ctaButton"]:active,
+  a[class*="contactLink"]:active {
+    transform: scale(0.97);
+    transition-duration: 100ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main.page-fade,
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+    transform: none;
+  }
+
+  .rise {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 

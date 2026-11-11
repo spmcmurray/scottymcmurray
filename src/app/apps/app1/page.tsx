@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -50,35 +51,35 @@ export default function AppOnePage() {
 
       <section id="features" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⏱️</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="timer" /></div>
               <h3>Ten minutes</h3>
               <p>Warmup, upper body, lower body and core, timed so the whole thing fits before your shower.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🏠</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="home" /></div>
               <h3>No equipment</h3>
               <p>Bodyweight only, so you can do it anywhere you have a few feet of floor.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🗓️</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="clipboard" /></div>
               <h3>Training plans</h3>
               <p>Follow a plan week by week, and add the days to your calendar so they don’t slip.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>💪</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="chart" /></div>
               <h3>Strength Score</h3>
               <p>Run a quick benchmark now and then and watch your Strength Score move.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🔥</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="zap" /></div>
               <h3>Streaks and history</h3>
               <p>See what you’ve done, which days you missed, and a small celebration when you finish a plan week.</p>
             </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>❤️</div>
+            <div className={styles.featureCard} data-rise data-lift>
+              <div className={styles.featureIcon}><LineIcon name="person" /></div>
               <h3>Apple Health</h3>
               <p>Finished workouts can be saved to Apple Health. TENFOLD never reads your Health records.</p>
             </div>
@@ -86,7 +87,7 @@ export default function AppOnePage() {
         </div>
       </section>
 
-      <section className={styles.supportSection}>
+      <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>
