@@ -452,6 +452,14 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <ul className="stats" aria-label="At a glance">
+            {about.stats.map((stat) => (
+              <li className="stat" key={stat.label}>
+                <p className="stat-number">{stat.number}</p>
+                <p className="stat-label">{stat.label}</p>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="sec" id="skills" aria-labelledby="skills-title">

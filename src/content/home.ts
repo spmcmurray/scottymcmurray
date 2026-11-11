@@ -149,6 +149,11 @@ export const about = {
       ],
     },
   ],
+  stats: [
+    { number: '5', label: 'Apps in Portfolio' },
+    { number: '100%', label: 'Self-Taught' },
+    { number: '1', label: 'Mission' },
+  ],
 } as const
 
 export const skills = {
