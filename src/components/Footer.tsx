@@ -1,61 +1,79 @@
 import Link from 'next/link'
+import { signOff } from '@/content/home'
 import styles from './Footer.module.css'
 
+const columns = [
+  {
+    title: 'Apps',
+    links: [
+      { label: 'TENFOLD', href: '/apps/app1' },
+      { label: 'Church Explorer', href: '/apps/app2' },
+      { label: 'RADICAL RUSH', href: '/apps/app3' },
+      { label: 'Nexus AI', href: '/apps/app4' },
+      { label: 'Clubhouse Golf', href: '/apps/app5' },
+    ],
+  },
+  {
+    title: 'Writing',
+    links: [{ label: 'AI Analyst Agent', href: '/guides/ai-analyst-agent' }],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Support', href: '/support' },
+    ],
+  },
+  {
+    title: 'Connect',
+    links: [
+      { label: 'Email', href: 'mailto:scottymcmurray@gmail.com' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/scottymcmurray/', external: true },
+      { label: 'GitHub', href: 'https://github.com/spmcmurray', external: true },
+    ],
+  },
+] as const
+
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const year = new Date().getFullYear()
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.grid}>
-          <div className={styles.section}>
-            <h3 className={styles.heading}>Scott McMurray</h3>
-            <p className={styles.tagline}>Simple apps for a simpler life</p>
-            <p className={styles.location}>Ohio, USA</p>
-          </div>
-
-          <div className={styles.section}>
-            <h4 className={styles.sectionTitle}>Apps</h4>
-            <nav className={styles.links}>
-              <Link href="/apps/app1" className={styles.link}>TENFOLD</Link>
-              <Link href="/apps/app2" className={styles.link}>Church Explorer</Link>
-              <Link href="/apps/app3" className={styles.link}>RADICAL RUSH</Link>
-              <Link href="/apps/app4" className={styles.link}>Nexus AI</Link>
-              <Link href="/apps/app5" className={styles.link}>Clubhouse Golf</Link>
-            </nav>
-          </div>
-
-          <div className={styles.section}>
-            <h4 className={styles.sectionTitle}>Writing</h4>
-            <nav className={styles.links}>
-              <Link href="/guides/ai-analyst-agent" className={styles.link}>AI Analyst Agent</Link>
-            </nav>
-          </div>
-
-          <div className={styles.section}>
-            <h4 className={styles.sectionTitle}>Legal</h4>
-            <nav className={styles.links}>
-              <Link href="/privacy" className={styles.link}>Privacy Policy</Link>
-              <Link href="/terms" className={styles.link}>Terms of Service</Link>
-              <Link href="/support" className={styles.link}>Support</Link>
-            </nav>
-          </div>
-
-          <div className={styles.section}>
-            <h4 className={styles.sectionTitle}>Connect</h4>
-            <nav className={styles.links}>
-              <a href="mailto:scottymcmurray@gmail.com" className={styles.link}>Email</a>
-              <a href="https://www.linkedin.com/in/scottymcmurray/" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
-              <a href="https://github.com/spmcmurray" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
-            </nav>
-          </div>
+      <div className={styles.grid}>
+        <div className={styles.brand}>
+          <Link href="/" className="wordmark">
+            <span className="mk" aria-hidden="true">SM</span>
+            <span>Scott McMurray</span>
+          </Link>
+          <p>Simple apps for a simpler life</p>
         </div>
-
-        <div className={styles.bottom}>
-          <p className={styles.copyright}>
-            © {currentYear} Scott McMurray. All rights reserved.
-          </p>
-        </div>
+        {columns.map((column) => (
+          <nav key={column.title} aria-label={column.title}>
+            <h2>{column.title}</h2>
+            {column.links.map((link) =>
+              link.href.startsWith('/') ? (
+                <Link key={link.label} href={link.href}>
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  {...('external' in link && link.external
+                    ? { target: '_blank', rel: 'noopener noreferrer' }
+                    : {})}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
+          </nav>
+        ))}
+      </div>
+      <div className={styles.bottom}>
+        <p>© {year} Scott McMurray. All rights reserved.</p>
+        <p className={styles.signoff}>{signOff}</p>
       </div>
     </footer>
   )

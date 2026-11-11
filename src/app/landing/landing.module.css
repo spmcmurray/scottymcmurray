@@ -1,6 +1,6 @@
 .landingContainer {
   font-family: var(--font-body);
-  padding: 0 var(--space-md) var(--space-lg) var(--space-md);
+  padding: var(--header-height) var(--space-md) var(--space-lg) var(--space-md);
   max-width: var(--max-width);
   margin: 0 auto;
   color: var(--color-text);

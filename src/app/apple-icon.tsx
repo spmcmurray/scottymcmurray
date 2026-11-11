@@ -16,22 +16,16 @@ export default function AppleIcon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'transparent',
+          background: '#ffffff',
+          borderRadius: 40,
+          color: '#1a1f6b',
+          fontSize: 64,
+          fontWeight: 700,
+          letterSpacing: 1,
+          fontFamily: 'Inter, system-ui, sans-serif',
         }}
       >
-        <div
-          style={{
-            fontSize: 90,
-            background: 'linear-gradient(135deg, #ff6b35 0%, #ffffff 100%)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            color: 'transparent',
-            fontFamily: '"Times New Roman", Georgia, serif',
-            fontWeight: 700,
-          }}
-        >
-          SM
-        </div>
+        SM
       </div>
     ),
     {

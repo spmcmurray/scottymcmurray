@@ -16,22 +16,16 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'transparent',
+          background: '#ffffff',
+          borderRadius: 8,
+          color: '#1a1f6b',
+          fontSize: 13,
+          fontWeight: 700,
+          letterSpacing: 0.4,
+          fontFamily: 'Inter, system-ui, sans-serif',
         }}
       >
-        <div
-          style={{
-            fontSize: 20,
-            background: 'linear-gradient(135deg, #ff6b35 0%, #ffffff 100%)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            color: 'transparent',
-            fontFamily: '"Times New Roman", Georgia, serif',
-            fontWeight: 700,
-          }}
-        >
-          SM
-        </div>
+        SM
       </div>
     ),
     {
