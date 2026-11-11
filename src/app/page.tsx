@@ -118,18 +118,6 @@ export default function Home() {
       <SiteNav variant="hero" />
       <main id="main" tabIndex={-1}>
         <section className="stage hero" data-bg="hero" aria-labelledby="hero-title">
-          <div className="atmo" aria-hidden="true">
-            <div className="blob b1" />
-            <div className="blob b2" />
-            <div className="blob b3" />
-            <div className="blob b4" />
-            <div className="blob b5" />
-            <div className="streak s1" />
-            <div className="streak s2" />
-          </div>
-          <div className="flutes" aria-hidden="true" />
-          <div className="grain" aria-hidden="true" />
-          <div className="vignette" aria-hidden="true" />
 
           <div className="copy">
             <p className="signature">{heroCopy.eyebrow}</p>
@@ -243,14 +231,6 @@ export default function Home() {
           </div>
 
           <div className="plate golf" data-bg="golf">
-            <div className="atmo" aria-hidden="true">
-              <div className="blob" style={{ width: 900, height: 700, left: -200, top: 200, background: '#1f3dff' }} />
-              <div className="blob" style={{ width: 800, height: 700, left: 560, top: -200, background: '#ff2d8f' }} />
-              <div className="blob" style={{ width: 700, height: 600, left: 900, top: 420, background: '#ff7a4d' }} />
-            </div>
-            <div className="flutes" aria-hidden="true" />
-            <div className="grain" aria-hidden="true" />
-            <div className="vig" aria-hidden="true" />
             <div className="phead">
               <div className="row">
                 <Link href={clubhouse.href} className="ico" aria-label={clubhouse.name}>
@@ -300,13 +280,6 @@ export default function Home() {
 
           <div className="duo">
             <article className="plate" data-bg="tenfold">
-              <div className="atmo" aria-hidden="true">
-                <div className="blob" style={{ width: 700, height: 600, left: -200, top: -150, background: '#5a2bff' }} />
-                <div className="blob" style={{ width: 700, height: 600, left: 200, top: 360, background: '#ff7a4d' }} />
-              </div>
-              <div className="flutes" aria-hidden="true" />
-              <div className="grain" aria-hidden="true" />
-              <div className="vig" aria-hidden="true" />
               <div className="phead">
                 <div className="row">
                   <Link href={tenfold.href} className="ico" aria-label={tenfold.name}>
@@ -333,13 +306,6 @@ export default function Home() {
               />
             </article>
             <article className="plate" data-bg="rush">
-              <div className="atmo" aria-hidden="true">
-                <div className="blob" style={{ width: 700, height: 600, left: 120, top: -150, background: '#ff2d8f' }} />
-                <div className="blob" style={{ width: 700, height: 600, left: -220, top: 360, background: '#1f3dff' }} />
-              </div>
-              <div className="flutes" aria-hidden="true" />
-              <div className="grain" aria-hidden="true" />
-              <div className="vig" aria-hidden="true" />
               <div className="phead">
                 <div className="row">
                   <Link href={radicalRush.href} className="ico" aria-label={radicalRush.name}>
@@ -369,13 +335,6 @@ export default function Home() {
 
           <div className="duo web">
             <article className="plate" data-bg="church">
-              <div className="atmo" aria-hidden="true">
-                <div className="blob" style={{ width: 700, height: 600, left: -150, top: 200, background: '#5a2bff' }} />
-                <div className="blob" style={{ width: 600, height: 500, left: 300, top: -150, background: '#1f3dff' }} />
-              </div>
-              <div className="flutes" aria-hidden="true" />
-              <div className="grain" aria-hidden="true" />
-              <div className="vig" aria-hidden="true" />
               <div className="phead">
                 <div className="row">
                   <Link href={churchExplorer.href} className="ico ce" aria-label={churchExplorer.name}>
@@ -399,13 +358,6 @@ export default function Home() {
               />
             </article>
             <article className="plate" data-bg="nexus">
-              <div className="atmo" aria-hidden="true">
-                <div className="blob" style={{ width: 700, height: 600, left: 160, top: 200, background: '#ff7a4d' }} />
-                <div className="blob" style={{ width: 600, height: 500, left: -200, top: -150, background: '#ff2d8f' }} />
-              </div>
-              <div className="flutes" aria-hidden="true" />
-              <div className="grain" aria-hidden="true" />
-              <div className="vig" aria-hidden="true" />
               <div className="phead">
                 <div className="row">
                   <Link href={nexus.href} className="ico" aria-label={nexus.name}>
@@ -491,13 +443,6 @@ export default function Home() {
               ))}
             </div>
             <div className="guide stage" data-bg="guide">
-              <div className="atmo" aria-hidden="true">
-                <div className="blob" style={{ width: 700, height: 600, left: -150, top: -150, background: '#1f3dff' }} />
-                <div className="blob" style={{ width: 700, height: 600, left: 300, top: 150, background: '#ff2d8f' }} />
-                <div className="blob" style={{ width: 500, height: 400, left: 500, top: 500, background: '#ff7a4d' }} />
-              </div>
-              <div className="flutes" aria-hidden="true" />
-              <div className="grain" aria-hidden="true" />
               <div className="copy-block">
                 <p className="eyebrow">{guideCard.eyebrow}</p>
                 <h3>
@@ -518,13 +463,6 @@ export default function Home() {
 
         <section className="sec" id="contact" aria-labelledby="contact-title">
           <div className="contact stage" data-bg="contact">
-            <div className="atmo" aria-hidden="true">
-              <div className="blob" style={{ width: 800, height: 600, left: -150, top: -100, background: '#1f3dff' }} />
-              <div className="blob" style={{ width: 800, height: 600, left: 450, top: -50, background: '#ff2d8f' }} />
-              <div className="blob" style={{ width: 700, height: 600, left: 950, top: 80, background: '#ff7a4d' }} />
-            </div>
-            <div className="flutes" aria-hidden="true" />
-            <div className="grain" aria-hidden="true" />
             <p className="eyebrow">{contactBand.eyebrow}</p>
             <h2 id="contact-title">
               {contactBand.titleLead}
