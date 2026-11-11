@@ -1,5 +1,6 @@
 import styles from "./work-with-me.module.css";
 import type { Metadata } from "next";
+import { LineIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Work With Me - Custom Web Development & AI Solutions for Small Business",
@@ -63,21 +64,21 @@ export default function WorkWithMePage() {
           <h2>What I Build</h2>
           <div className={styles.serviceGrid}>
             <div className={styles.serviceCard} data-lift>
-              <h3>🌐 Website Design & Development</h3>
+              <h3><LineIcon name="globe" /> Website Design & Development</h3>
               <p>
                 Modern, mobile-friendly websites that convert visitors into customers. 
                 Fast-loading, SEO-optimized, and built to reflect your unique brand identity.
               </p>
             </div>
             <div className={styles.serviceCard} data-lift>
-              <h3>⚡ Custom Applications</h3>
+              <h3><LineIcon name="zap" /> Custom Applications</h3>
               <p>
                 Tailored software solutions that streamline your operations and engage customers. 
                 From inventory management to customer portals—built exactly for your needs.
               </p>
             </div>
             <div className={styles.serviceCard} data-lift>
-              <h3>🤖 AI Integration</h3>
+              <h3><LineIcon name="bot" /> AI Integration</h3>
               <p>
                 Leverage AI to automate repetitive tasks, personalize customer experiences, 
                 and unlock data-driven insights that help you make smarter decisions.

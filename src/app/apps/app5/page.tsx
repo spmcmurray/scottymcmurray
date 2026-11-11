@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -47,32 +48,32 @@ export default function AppFivePage() {
           <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>📍</div>
+              <div className={styles.featureIcon}><LineIcon name="pin" /></div>
               <h3>Live Yardages</h3>
               <p>Distance to the front, middle and back of the green from wherever you are standing.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🗺️</div>
+              <div className={styles.featureIcon}><LineIcon name="map" /></div>
               <h3>Hole Maps</h3>
               <p>Greens, bunkers and water drawn from OpenStreetMap, with a target line you can read at a glance.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🎙️</div>
+              <div className={styles.featureIcon}><LineIcon name="mic" /></div>
               <h3>Voice Scoring</h3>
               <p>Say &ldquo;bogey, two putts, missed the fairway left.&rdquo; Score, putts and fairway fill in. With no signal, it saves when you are back online.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>📋</div>
+              <div className={styles.featureIcon}><LineIcon name="clipboard" /></div>
               <h3>Full Scorecard</h3>
               <p>Par, yardage for every tee, handicap and your running score to par, front nine and back nine.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>📊</div>
+              <div className={styles.featureIcon}><LineIcon name="chart" /></div>
               <h3>Stats That Matter</h3>
               <p>Putts, fairways and greens in regulation for every round, and your average and best over time.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>⛳</div>
+              <div className={styles.featureIcon}><LineIcon name="flag" /></div>
               <h3>Start Without an Account</h3>
               <p>Tee off in seconds as a guest. Sign in with Apple or email when you want your rounds on every device.</p>
             </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -55,32 +56,32 @@ export default function AppFourPage() {
           <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🤖</div>
+              <div className={styles.featureIcon}><LineIcon name="bot" /></div>
               <h3>Multiple LLM Support</h3>
               <p>Access ChatGPT, Claude, Gemini, and Grok—all from a single unified interface.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🔄</div>
+              <div className={styles.featureIcon}><LineIcon name="refresh" /></div>
               <h3>Seamless Switching</h3>
               <p>Switch between different AI models instantly to compare responses and find the best solution.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>💬</div>
+              <div className={styles.featureIcon}><LineIcon name="message" /></div>
               <h3>Unified Chat Interface</h3>
               <p>One clean, intuitive chat interface for all your AI interactions. No context switching needed.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🌐</div>
+              <div className={styles.featureIcon}><LineIcon name="globe" /></div>
               <h3>Web-Based</h3>
               <p>Access your AI conversations from any device with a browser. No installation required.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>⚡</div>
+              <div className={styles.featureIcon}><LineIcon name="zap" /></div>
               <h3>Fast & Responsive</h3>
               <p>Built with modern web technologies for a smooth, lag-free experience.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🎯</div>
+              <div className={styles.featureIcon}><LineIcon name="target" /></div>
               <h3>Streamlined Workflow</h3>
               <p>Save time by managing all your AI interactions in one place instead of juggling multiple platforms.</p>
             </div>

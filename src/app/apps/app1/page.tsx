@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
@@ -46,32 +47,32 @@ export default function AppOnePage() {
           <h2 className={styles.sectionTitle} data-rise>Features</h2>
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>⏱️</div>
+              <div className={styles.featureIcon}><LineIcon name="timer" /></div>
               <h3>Just 10 Minutes</h3>
               <p>Quick, effective workouts designed to fit into any schedule. No more excuses.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>🏠</div>
+              <div className={styles.featureIcon}><LineIcon name="home" /></div>
               <h3>No Equipment Needed</h3>
               <p>All exercises use just your bodyweight. Work out anywhere, anytime.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>📱</div>
+              <div className={styles.featureIcon}><LineIcon name="phone" /></div>
               <h3>Cross-Platform</h3>
               <p>Built with Expo for iOS, Android, and web. File-based routing with Expo Router.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>📊</div>
+              <div className={styles.featureIcon}><LineIcon name="chart" /></div>
               <h3>Track Progress</h3>
               <p>See your workout streak and stay motivated with simple progress tracking.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>⚙️</div>
+              <div className={styles.featureIcon}><LineIcon name="settings" /></div>
               <h3>Modern Tech Stack</h3>
               <p>TypeScript, React Native, and Xcode Cloud CI/CD for streamlined deployment.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
-              <div className={styles.featureIcon}>💪</div>
+              <div className={styles.featureIcon}><LineIcon name="person" /></div>
               <h3>All Fitness Levels</h3>
               <p>Workouts are designed for everyone, whether you're just starting or staying active.</p>
             </div>

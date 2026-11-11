@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { LineIcon } from '@/components/Icons'
 import styles from './support.module.css'
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function SupportPage() {
         <div className={styles.container}>
           <div className={styles.contactGrid}>
             <div className={styles.contactCard} data-rise data-lift>
-              <div className={styles.contactIcon}>📧</div>
+              <div className={styles.contactIcon}><LineIcon name="mail" /></div>
               <h2>Contact Me</h2>
               <p>Questions, bug reports, feature requests, or just want to say hello?</p>
               <a href="mailto:scottymcmurray@gmail.com" className={styles.contactLink}>
