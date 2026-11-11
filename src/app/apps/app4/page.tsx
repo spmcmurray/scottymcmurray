@@ -41,8 +41,8 @@ export default function AppFourPage() {
                 <div className={styles.browserUrl}>getnexus.us</div>
               </div>
               <img 
-                src="/nexusai_screenshot.png" 
-                alt="Nexus AI web app screenshot"
+                src="/afterglow/nexus-chat.jpg" 
+                alt="Nexus AI chat answering a question about quantum physics. The account sidebar is not shown."
                 className={styles.browserScreenshot}
               />
             </div>

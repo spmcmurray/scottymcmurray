@@ -1,30 +1,26 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Karla, JetBrains_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import './afterglow.css'
+import FluteFilter from '@/components/FluteFilter'
+import SiteChrome from '@/components/SiteChrome'
 
-const playfair = Playfair_Display({ 
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-display',
   display: 'swap',
+  variable: '--font-inter',
 })
 
-const karla = Karla({ 
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  variable: '--font-body',
+  weight: ['400', '500'],
   display: 'swap',
-})
-
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ['latin'],
-  variable: '--font-mono',
-  display: 'swap',
+  variable: '--font-jetbrains',
 })
 
 export const metadata: Metadata = {
   title: 'Scott McMurray - App Developer',
-  description: 'Simple apps for a simpler life. Ohio-based self-taught developer building iOS apps and games focused on fitness, faith, and fun.',
+  description: 'Simple apps for a simpler life. Designed by Scott McMurray in Ohio. iOS apps and games focused on fitness, faith, and fun.',
   keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'Church Explorer', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
   authors: [{ name: 'Scott McMurray' }],
   openGraph: {
@@ -54,11 +50,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${karla.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <FluteFilter />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   )

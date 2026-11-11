@@ -1,5 +1,5 @@
 :root {
-  /* Color Palette - Warm, earthy tones with vibrant accents */
+  /* Inner pages keep the existing palette. The homepage uses Afterglow. */
   --color-bg: #0a0a0a;
   --color-surface: #1a1612;
   --color-surface-elevated: #2a2218;
@@ -11,10 +11,10 @@
   --color-secondary: #f4a261;
   --color-tertiary: #2a9d8f;
   
-  /* Typography */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  /* Typography — Inter everywhere, JetBrains Mono for code and mono labels */
+  --font-display: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', ui-monospace, monospace;
   
   /* Spacing */
   --space-xs: 0.5rem;
@@ -25,7 +25,7 @@
   
   /* Layout */
   --max-width: 1200px;
-  --header-height: 80px;
+  --header-height: 76px;
   
   /* Animations */
   --transition-fast: 150ms ease-in-out;
@@ -117,10 +117,23 @@ code {
   color: var(--color-bg);
 }
 
-/* Focus styles */
+/* Focus styles — visible on the gradient and on inner pages */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(20, 26, 92, 0.95);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Animations */
@@ -173,4 +186,15 @@ code {
 
 .animate-in-delay-4 {
   animation-delay: 400ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
