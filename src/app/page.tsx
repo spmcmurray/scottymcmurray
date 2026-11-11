@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Settle from '@/components/Settle'
 import SiteNav from '@/components/SiteNav'
 import Footer from '@/components/Footer'
 import { ArrowIcon, StrokeIcon } from '@/components/Icons'
@@ -113,6 +114,7 @@ export default function Home() {
   return (
     <>
     <div className="ag">
+      <Settle />
       <SiteNav variant="hero" />
       <main id="main" tabIndex={-1}>
         <section className="stage hero" data-bg="hero" aria-labelledby="hero-title">

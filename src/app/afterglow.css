@@ -157,9 +157,19 @@
   right: 0;
   z-index: 1000;
   height: var(--header-height);
-  padding: 0 28px;
+  padding: 0 1.75rem;
   background: rgba(7, 10, 46, 0.94);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bar-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 1.5rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(7, 10, 46, 0.72), rgba(7, 10, 46, 0));
 }
 
 .bar-nav .navpill {
@@ -251,7 +261,7 @@
 
 /* ---------- homepage ---------- */
 .ag {
-  --pad: 56px;
+  --pad: 3.5rem;
   --navy: #070a2e;
   position: relative;
   background: var(--navy);
@@ -440,7 +450,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 28px var(--pad) 0;
+  padding: 1.75rem var(--pad) 0;
 }
 
 .ag .b1 { width: 900px; height: 620px; left: -220px; top: 120px; background: #1f3dff; }
@@ -484,8 +494,8 @@
 
 .ag h1 {
   font-weight: 300;
-  letter-spacing: -0.055em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
   font-size: 88px;
   margin: 22px 0;
   white-space: nowrap;
@@ -624,10 +634,11 @@
 .ag .note span {
   display: block;
   font-size: 12.5px;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.94);
   margin-top: 3px;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.015em;
 }
 
 .ag .note .glyph {
@@ -746,14 +757,15 @@
 .ag .feat span {
   display: block;
   font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.82);
+  font-weight: 500;
+  letter-spacing: 0.012em;
+  color: rgba(255, 255, 255, 0.9);
   margin-top: 3px;
   line-height: 1.4;
 }
 
 .ag .sec {
-  padding: 140px var(--pad) 0;
+  padding: 8.75rem var(--pad) 0;
   position: relative;
 }
 
@@ -775,8 +787,8 @@
 .ag h2 {
   font-size: 64px;
   font-weight: 300;
-  letter-spacing: -0.048em;
-  line-height: 1.02;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
   margin: 18px 0 0;
   color: #fff;
 }
@@ -835,8 +847,8 @@
 .ag .phead h3 {
   font-size: 40px;
   font-weight: 300;
-  letter-spacing: -0.04em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
   margin: 0;
 }
 
@@ -883,6 +895,8 @@ a.ag-tag:hover,
 
 .ag .mini span {
   font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.012em;
   padding: 7px 12px;
   border-radius: 999px;
   background: rgba(8, 10, 36, 0.35);
@@ -942,7 +956,8 @@ a.ag-tag:hover,
   color: rgba(255, 255, 255, 0.9);
   margin-top: 3px;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.012em;
 }
 
 .ag .cap i {
@@ -1018,8 +1033,8 @@ a.ag-tag:hover,
 .ag .statement {
   font-size: 52px;
   font-weight: 300;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
   max-width: 1180px;
   margin: 22px 0 0;
   color: #fff;
@@ -1030,9 +1045,9 @@ a.ag-tag:hover,
 .ag .three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 56px;
-  margin-top: 72px;
-  padding-top: 32px;
+  gap: 3.5rem;
+  margin-top: 4.5rem;
+  padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
@@ -1058,8 +1073,8 @@ a.ag-tag:hover,
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 56px 0 0;
+  gap: 1rem;
+  margin: 3.5rem 0 0;
   padding: 0;
 }
 
@@ -1078,7 +1093,7 @@ a.ag-tag:hover,
   margin: 0;
   font-size: 64px;
   font-weight: 300;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.02em;
   line-height: 1;
   color: #fff;
 }
@@ -1086,8 +1101,8 @@ a.ag-tag:hover,
 .ag .stat-label {
   margin: 12px 0 0;
   font-size: 15px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-weight: 550;
+  letter-spacing: 0.015em;
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -1145,9 +1160,9 @@ a.ag-tag:hover,
 .ag .guide h3 {
   font-size: 52px;
   font-weight: 300;
-  letter-spacing: -0.045em;
-  line-height: 1;
-  margin: 18px 0 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 1.125rem 0 1.25rem;
   color: #fff;
   text-transform: none;
 }
@@ -1194,7 +1209,7 @@ a.ag-tag:hover,
 
 /* tablet: keep the stage, but don't let the desktop coordinates overflow */
 @media (max-width: 1439px) {
-  .ag { --pad: 32px; }
+  .ag { --pad: 2rem; }
 
   .ag .hero {
     height: auto;
@@ -1307,7 +1322,7 @@ a.ag-tag:hover,
 }
 
 @media (max-width: 600px) {
-  .ag { --pad: 20px; }
+  .ag { --pad: 1.25rem; }
 
   .ag .hero {
     height: 844px;
@@ -1346,7 +1361,7 @@ a.ag-tag:hover,
   .ag .dock .ico { width: 50px; height: 50px; }
   .ag .dock .sep { display: none; }
 
-  .ag .sec { padding: 90px var(--pad) 0; }
+  .ag .sec { padding: 5.625rem var(--pad) 0; }
   .ag h2 { font-size: 42px; }
   .ag .golf { padding: 28px 24px 0; }
   .ag .golf .trio { margin: 36px -40px -80px; gap: 12px; }
@@ -1382,19 +1397,104 @@ a.ag-tag:hover,
     rgba(8, 10, 36, 0.42);
 }
 
+.pill,
+.menu-btn,
+.navpill a,
+.dock a,
+.phead a.ico {
+  transition: transform 100ms ease-out;
+}
+
+.pill:active,
+.menu-btn:active,
+.navpill a:active,
+.dock a:active,
+.phead a.ico:active {
+  transform: scale(0.97);
+}
+
+.ag .settle {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 420ms ease-out, transform 420ms ease-out;
+}
+
+.ag .settle.is-settled,
+.ag .settle-fade.is-settled {
+  opacity: 1;
+  transform: none;
+}
+
+.ag .settle-fade {
+  opacity: 0;
+  transition: opacity 280ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ag .settle,
+  .ag .settle-fade {
+    transform: none;
+    transition: opacity 280ms ease-out;
+  }
+
+  .ag .settle-fade,
+  .ag .settle {
+    transition-duration: 280ms !important;
+  }
+}
+
 @media (prefers-reduced-transparency: reduce) {
   .glass,
   .ag .stat,
   .ag .note,
   .ag .cap,
   .ag .dock,
+  .ag .panel,
   .ag .mini span,
   .ag .pill.glass,
   .hero-nav .navpill,
   .bar-nav,
+  .mobile-nav,
   .mobile-nav.open {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background: rgba(7, 10, 40, 0.94);
+    background: rgba(7, 10, 40, 0.96);
+  }
+
+  .pill.white {
+    background: #fff;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .glass,
+  .ag .stat,
+  .ag .note,
+  .ag .cap,
+  .ag .dock,
+  .ag .panel,
+  .navpill,
+  .bar-nav,
+  .ag .mini span,
+  .ag .tag {
+    border-color: #fff;
+    border-width: 2px;
+  }
+
+  .ag .note span,
+  .ag .note b,
+  .ag .cap span,
+  .ag .cap b,
+  .ag .stat-label,
+  .ag .feat span,
+  .ag .feat b,
+  .ag .mini span,
+  .ag .phead p,
+  .ag .three p,
+  .ag .sub,
+  .navpill a,
+  .ag .lede {
+    color: #fff;
+    font-weight: 600;
   }
 }
