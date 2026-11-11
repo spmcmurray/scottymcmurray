@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
-  title: 'App One - Scott McMurray',
-  description: 'A beautiful iOS application designed to simplify your daily routine.',
+  title: 'TENFOLD - Scott McMurray',
+  description: 'A ten-minute, no-equipment workout for iPhone, with training plans, streaks and a Strength Score.',
 }
 
 export default function AppOnePage() {
@@ -12,11 +12,18 @@ export default function AppOnePage() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.heroContent}>
+            <img
+              src="/afterglow/icon-tenfold.png"
+              alt="TENFOLD app icon: a white 10 on a teal and sand gradient"
+              className={`${styles.appIcon} animate-in`}
+              width={72}
+              height={72}
+            />
             <div className={`${styles.badge} animate-in`}>iOS App</div>
             <h1 className={`${styles.title} animate-in animate-in-delay-1`}>TENFOLD</h1>
             <p className={`${styles.subtitle} animate-in animate-in-delay-2`}>
-              Cross-platform workout app built with Expo and TypeScript. 
-              10-minute workouts, no equipment needed—just quick, effective exercises you can do anywhere.
+              A workout that takes ten minutes and needs no equipment. Warm up, then upper body,
+              lower body and core, in your living room or a hotel room.
             </p>
             <div className={`${styles.buttons} animate-in animate-in-delay-3`}>
               <a href="#" className={styles.downloadButton}>
@@ -30,10 +37,10 @@ export default function AppOnePage() {
             </div>
           </div>
           <div className={`${styles.heroImage} animate-in animate-in-delay-2`}>
-            <div className={styles.phoneMockup}>
+            <div className={styles.phoneFrame}>
               <img 
                 src="/TENFOLD_Screenshot.jpg" 
-                alt="TENFOLD app screenshot showing workout tracking interface"
+                alt="TENFOLD onboarding: Ten minutes, no equipment, with warmup, upper body, lower body and core listed"
                 className={styles.appScreenshot}
               />
             </div>
@@ -47,33 +54,33 @@ export default function AppOnePage() {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>⏱️</div>
-              <h3>Just 10 Minutes</h3>
-              <p>Quick, effective workouts designed to fit into any schedule. No more excuses.</p>
+              <h3>Ten minutes</h3>
+              <p>Warmup, upper body, lower body and core, timed so the whole thing fits before your shower.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🏠</div>
-              <h3>No Equipment Needed</h3>
-              <p>All exercises use just your bodyweight. Work out anywhere, anytime.</p>
+              <h3>No equipment</h3>
+              <p>Bodyweight only, so you can do it anywhere you have a few feet of floor.</p>
             </div>
             <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📱</div>
-              <h3>Cross-Platform</h3>
-              <p>Built with Expo for iOS, Android, and web. File-based routing with Expo Router.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📊</div>
-              <h3>Track Progress</h3>
-              <p>See your workout streak and stay motivated with simple progress tracking.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>⚙️</div>
-              <h3>Modern Tech Stack</h3>
-              <p>TypeScript, React Native, and Xcode Cloud CI/CD for streamlined deployment.</p>
+              <div className={styles.featureIcon}>🗓️</div>
+              <h3>Training plans</h3>
+              <p>Follow a plan week by week, and add the days to your calendar so they don’t slip.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>💪</div>
-              <h3>All Fitness Levels</h3>
-              <p>Workouts are designed for everyone, whether you're just starting or staying active.</p>
+              <h3>Strength Score</h3>
+              <p>Run a quick benchmark now and then and watch your Strength Score move.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}>🔥</div>
+              <h3>Streaks and history</h3>
+              <p>See what you’ve done, which days you missed, and a small celebration when you finish a plan week.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}>❤️</div>
+              <h3>Apple Health</h3>
+              <p>Finished workouts can be saved to Apple Health. TENFOLD never reads your Health records.</p>
             </div>
           </div>
         </div>
@@ -83,7 +90,7 @@ export default function AppOnePage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>
-            I'm here to help with any questions or issues you might have.
+            Something not working, or an idea for it? Send me a note and I’ll reply myself.
           </p>
           <a href="/support" className={styles.supportButton}>Contact Support</a>
         </div>

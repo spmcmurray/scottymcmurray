@@ -54,7 +54,7 @@ export default function AppFivePage() {
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🗺️</div>
               <h3>Hole Maps</h3>
-              <p>Greens, bunkers and water drawn from OpenStreetMap, with a target line you can read at a glance.</p>
+              <p>Greens, bunkers and water from OpenStreetMap, with a line to the pin you can read at a glance.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🎙️</div>
@@ -68,13 +68,13 @@ export default function AppFivePage() {
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>📊</div>
-              <h3>Stats That Matter</h3>
+              <h3>Round stats</h3>
               <p>Putts, fairways and greens in regulation for every round, and your average and best over time.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>⛳</div>
               <h3>Start Without an Account</h3>
-              <p>Tee off in seconds as a guest. Sign in with Apple or email when you want your rounds on every device.</p>
+              <p>Tee off as a guest in seconds. Sign in with Apple or email later if you want your rounds on every device.</p>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function AppFivePage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Questions?</h2>
           <p className={styles.supportText}>
-            Clubhouse Golf is in beta. Want to try it, or have a course that needs fixing? Get in touch.
+            Clubhouse Golf is in beta. If you want to try it, or your home course has a hole drawn wrong, send me a note.
           </p>
           <a href="/support" className={styles.supportButton}>Contact Me</a>
         </div>

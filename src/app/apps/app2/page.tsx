@@ -3,7 +3,7 @@ import styles from '../app.module.css'
 
 export const metadata: Metadata = {
   title: 'Church Explorer - Scott McMurray',
-  description: 'AI-powered microlearning for Christian church history and theology.',
+  description: 'Short lessons on Christian church history and theology, with AI to answer your questions.',
 }
 
 export default function AppTwoPage() {
@@ -15,8 +15,8 @@ export default function AppTwoPage() {
             <div className={`${styles.badge} animate-in`}>Web App</div>
             <h1 className={`${styles.title} animate-in animate-in-delay-1`}>Church Explorer</h1>
             <p className={`${styles.subtitle} animate-in animate-in-delay-2`}>
-              Learn Christian church history and theology in bite-sized lessons powered by AI.
-              Deepen your faith through daily microlearning that fits your schedule.
+              Short lessons on Christian church history and theology, powered by AI.
+              Each one takes a few minutes, so it fits in a lunch break.
             </p>
             <div className={`${styles.buttons} animate-in animate-in-delay-3`}>
               <a href="https://churchexplorer.org" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
@@ -56,33 +56,33 @@ export default function AppTwoPage() {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🤖</div>
-              <h3>AI-Powered Learning</h3>
-              <p>Interactive lessons that adapt to your questions and curiosity using advanced AI.</p>
+              <h3>Lessons that answer back</h3>
+              <p>Get stuck on something and ask. The lesson picks up from your question.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>⏰</div>
-              <h3>Microlearning Format</h3>
-              <p>Short, focused lessons that fit into your daily routine. Learn in just a few minutes.</p>
+              <h3>A few minutes at a time</h3>
+              <p>One topic per lesson, so you can finish it before your coffee gets cold.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>📚</div>
               <h3>Church History & Theology</h3>
-              <p>Explore centuries of Christian tradition, from early church to modern movements.</p>
+              <p>From the early church through the Reformation and into the present day.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>💬</div>
-              <h3>Ask Questions</h3>
-              <p>Curious about something? Ask questions and get thoughtful, informed responses.</p>
+              <h3>Ask anything</h3>
+              <p>Wondering why a council met, or what a word meant back then? Just ask.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>📖</div>
-              <h3>Biblical Context</h3>
-              <p>Learn how theology developed alongside scripture and historical events.</p>
+              <h3>Scripture in context</h3>
+              <p>See how doctrine took shape alongside scripture and the events around it.</p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🌱</div>
-              <h3>Grow Your Faith</h3>
-              <p>Build a deeper understanding of Christian beliefs and practices over time.</p>
+              <h3>It adds up</h3>
+              <p>A little each day gets you a much better picture of what Christians believe and why.</p>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function AppTwoPage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>
-            I'm here to help with any questions or issues you might have.
+            Something not working, or an idea for it? Send me a note and I’ll reply myself.
           </p>
           <a href="/support" className={styles.supportButton}>Contact Support</a>
         </div>
