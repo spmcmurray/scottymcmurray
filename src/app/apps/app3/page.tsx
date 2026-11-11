@@ -4,7 +4,7 @@ import styles from '../app.module.css'
 
 export const metadata: Metadata = {
   title: 'RADICAL RUSH - Scott McMurray',
-  description: 'A fast-paced Bop-It style gesture game with global leaderboards.',
+  description: 'A Bop-It style reaction game for iPhone. Six gestures, one mistake, global leaderboards.',
 }
 
 export default function AppThreePage() {
@@ -16,8 +16,8 @@ export default function AppThreePage() {
             <div className={`${styles.badge} animate-in`}>iOS Game</div>
             <h1 className={`${styles.title} animate-in animate-in-delay-1`}>RADICAL RUSH</h1>
             <p className={`${styles.subtitle} animate-in animate-in-delay-2`}>
-              An insanely fun reaction game built with React Native and Expo.
-              Master six gesture types with one-mistake intensity—tap, hold, and swipe your way to the top!
+              A Bop-It style reaction game for iPhone. Tap, hold, or swipe the way the screen tells you.
+              Miss one and the run is over.
             </p>
             <div className={`${styles.buttons} animate-in animate-in-delay-3`}>
               <a href="#" className={styles.downloadButton}>
@@ -49,32 +49,32 @@ export default function AppThreePage() {
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="target" /></div>
               <h3>Classic & Zen Modes</h3>
-              <p>Fast-paced Classic mode or relaxed Zen mode. Six gesture types: tap, hold, swipe up, down, left, right.</p>
+              <p>Classic speeds up until you slip. Zen lets you play without the pressure. Six gestures: tap, hold, and swipe up, down, left or right.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="zap" /></div>
-              <h3>One-Mistake Intensity</h3>
-              <p>One mistake ends the run. Accelerating tempo keeps you sharp and focused.</p>
+              <h3>One mistake ends it</h3>
+              <p>The tempo keeps climbing, so every round ends a little differently.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="trophy" /></div>
               <h3>Apple GameCenter</h3>
-              <p>Global leaderboards and achievements via GameCenter integration. Compete worldwide!</p>
+              <p>Global leaderboards and achievements through Game Center, so you can see how you stack up.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="phone" /></div>
-              <h3>Haptic Feedback</h3>
-              <p>Feel every correct move and alert with responsive haptic feedback.</p>
+              <h3>Haptics</h3>
+              <p>You feel every hit and every warning in your hand, so you can play without staring.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="spark" /></div>
-              <h3>Beautiful UI</h3>
-              <p>Motion R branding, smooth transitions, and floating particle effects.</p>
+              <h3>Looks the part</h3>
+              <p>Bold colors, quick transitions and a few floating particles.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="gamepad" /></div>
-              <h3>Built with React Native</h3>
-              <p>Cross-platform development using Expo, TypeScript, and modern mobile best practices.</p>
+              <h3>Built with Expo</h3>
+              <p>React Native and TypeScript under the hood.</p>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function AppThreePage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Need Help?</h2>
           <p className={styles.supportText}>
-            I'm here to help with any questions or issues you might have.
+            Something not working, or an idea for it? Send me a note and I’ll reply myself.
           </p>
           <a href="/support" className={styles.supportButton}>Contact Support</a>
         </div>

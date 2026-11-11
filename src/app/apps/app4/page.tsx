@@ -4,7 +4,7 @@ import styles from '../app.module.css'
 
 export const metadata: Metadata = {
   title: 'Nexus AI - Scott McMurray',
-  description: 'Unified LLM interface for seamless interaction with multiple AI models.',
+  description: 'ChatGPT, Claude, Gemini and Grok in one chat window.',
 }
 
 export default function AppFourPage() {
@@ -16,8 +16,8 @@ export default function AppFourPage() {
             <div className={`${styles.badge} animate-in`}>Web App</div>
             <h1 className={`${styles.title} animate-in animate-in-delay-1`}>Nexus AI</h1>
             <p className={`${styles.subtitle} animate-in animate-in-delay-2`}>
-              A unified interface for interacting with multiple large language models.
-              Switch between different AI models seamlessly in one clean, powerful interface.
+              ChatGPT, Claude, Gemini and Grok in one chat window.
+              Ask the same question to each and see who answers it best.
             </p>
             <div className={`${styles.buttons} animate-in animate-in-delay-3`}>
               <a href="https://getnexus.us" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
@@ -57,33 +57,33 @@ export default function AppFourPage() {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="bot" /></div>
-              <h3>Multiple LLM Support</h3>
-              <p>Access ChatGPT, Claude, Gemini, and Grok—all from a single unified interface.</p>
+              <h3>Four models</h3>
+              <p>ChatGPT, Claude, Gemini and Grok, side by side in one place.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="refresh" /></div>
-              <h3>Seamless Switching</h3>
-              <p>Switch between different AI models instantly to compare responses and find the best solution.</p>
+              <h3>Switch mid-chat</h3>
+              <p>Not happy with an answer? Try another model without starting over.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="message" /></div>
-              <h3>Unified Chat Interface</h3>
-              <p>One clean, intuitive chat interface for all your AI interactions. No context switching needed.</p>
+              <h3>One window</h3>
+              <p>The same layout every time, whichever model you’re talking to.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="globe" /></div>
               <h3>Web-Based</h3>
-              <p>Access your AI conversations from any device with a browser. No installation required.</p>
+              <p>Open it in any browser, on your phone or your laptop. Nothing to install.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="zap" /></div>
-              <h3>Fast & Responsive</h3>
-              <p>Built with modern web technologies for a smooth, lag-free experience.</p>
+              <h3>Quick</h3>
+              <p>It loads fast and stays out of the way while you type.</p>
             </div>
             <div className={styles.featureCard} data-rise data-lift>
               <div className={styles.featureIcon}><LineIcon name="target" /></div>
-              <h3>Streamlined Workflow</h3>
-              <p>Save time by managing all your AI interactions in one place instead of juggling multiple platforms.</p>
+              <h3>Fewer tabs</h3>
+              <p>Stop bouncing between four sites to compare answers.</p>
             </div>
           </div>
         </div>
@@ -91,12 +91,12 @@ export default function AppFourPage() {
 
       <section className={`${styles.section} ${styles.ctaSection}`} data-rise>
         <div className={styles.container}>
-          <h2 className={styles.ctaTitle}>Ready to unify your AI workflow?</h2>
+          <h2 className={styles.ctaTitle}>Tired of juggling four AI tabs?</h2>
           <p className={styles.ctaDescription}>
-            Start using multiple AI models from one powerful interface
+            Try them all from one window.
           </p>
           <a href="https://getnexus.us" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
-            Try Nexus AI Now
+            Open Nexus AI
           </a>
         </div>
       </section>

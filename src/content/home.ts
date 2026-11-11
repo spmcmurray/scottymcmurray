@@ -15,7 +15,7 @@ export const heroCopy = {
   headlineEmphasis: 'for a',
   /** Includes the trailing period. */
   headlineTail: 'simpler life.',
-  lede: 'Building apps that add value to people’s lives, simple by design.',
+  lede: 'I’m Scott. I build iPhone and web apps in Ohio: a ten-minute workout, a golf scorecard you can talk to, a reaction game.',
   primaryCta: { label: 'Explore my apps', href: '#apps' },
   secondaryCta: { label: 'Read the guide', href: '/guides/ai-analyst-agent' },
 } as const
@@ -24,8 +24,8 @@ export const signOff = 'Designed by Scott McMurray in Ohio'
 
 export const heroNotes = [
   {
-    title: 'Just 10 Minutes',
-    body: 'No equipment needed. Work out anywhere, anytime.',
+    title: 'Ten minutes, no gear',
+    body: 'A full workout in your living room, or a hotel room.',
     icon: 'tenfold',
   },
   {
@@ -34,21 +34,21 @@ export const heroNotes = [
     icon: 'golf',
   },
   {
-    title: 'Simple by design',
-    body: 'Built to add real value to your daily life.',
+    title: 'Small on purpose',
+    body: 'Each app does one job and stays out of your way.',
     icon: 'shield',
   },
   {
-    title: 'One-Mistake Intensity',
-    body: 'Six gesture types. One mistake ends the run.',
+    title: 'One mistake and you’re out',
+    body: 'Six gestures, and the pace keeps picking up.',
     icon: 'rr',
   },
 ] as const
 
 export const highlights = [
   {
-    title: 'Simple by design',
-    body: 'Apps that add real value',
+    title: 'Small on purpose',
+    body: 'One job per app',
     icon: 'shield',
   },
   {
@@ -57,22 +57,22 @@ export const highlights = [
     icon: 'phone',
   },
   {
-    title: 'AI-first development',
-    body: 'Build faster and smarter',
+    title: 'Built with AI tools',
+    body: 'Claude, Cursor, Expo',
     icon: 'spark',
   },
   {
-    title: 'AI-enabled analytics',
-    body: 'Analyst agent architecture',
+    title: 'Analytics with AI',
+    body: 'Analyst agents and semantic models',
     icon: 'book',
   },
 ] as const
 
 export const appsIntro = {
-  eyebrow: 'My Applications',
-  titleLead: 'From fitness to faith,',
-  titleEmphasis: 'golf and fast-paced fun.',
-  sub: 'Each app is built to add real value to your daily life.',
+  eyebrow: 'The apps',
+  titleLead: 'What I’ve built so far:',
+  titleEmphasis: 'a workout, a golf card, a game, and two AI tools.',
+  sub: 'Tap any of them to see more.',
 } as const
 
 export const clubhouse = {
@@ -91,16 +91,16 @@ export const tenfold = {
   href: '/apps/app1',
   name: 'TENFOLD',
   tag: 'iOS',
-  body: '10-minute workouts, no equipment needed—just quick, effective exercises you can do anywhere.',
-  pills: ['Just 10 Minutes', 'No Equipment Needed', 'Track Progress'],
+  body: 'A workout that takes ten minutes and needs no equipment. Follow a training plan or just start, and watch your streak and Strength Score climb.',
+  pills: ['No equipment', 'Training plans', 'Strength Score'],
 } as const
 
 export const radicalRush = {
   href: '/apps/app3',
   name: 'RADICAL RUSH',
   tag: 'iOS Game',
-  body: 'An insanely fun reaction game. Master six gesture types with one-mistake intensity—tap, hold, and swipe your way to the top!',
-  pills: ['Classic & Zen Modes', 'Apple GameCenter', 'Haptic Feedback'],
+  body: 'A reaction game with six gestures: tap, hold, and swipe in four directions. Get one wrong and the run is over.',
+  pills: ['Classic and Zen modes', 'Game Center leaderboards', 'Haptics'],
 } as const
 
 export const churchExplorer = {
@@ -108,7 +108,7 @@ export const churchExplorer = {
   name: 'Church Explorer',
   tag: 'Web · churchexplorer.org',
   external: 'https://churchexplorer.org',
-  body: 'Learn Christian church history and theology in bite-sized lessons powered by AI.',
+  body: 'Short lessons on Christian church history and theology, powered by AI.',
 } as const
 
 export const nexus = {
@@ -116,43 +116,43 @@ export const nexus = {
   name: 'Nexus AI',
   tag: 'Web · getnexus.us',
   external: 'https://getnexus.us',
-  body: 'Access ChatGPT, Claude, Gemini, and Grok—all from a single unified interface.',
+  body: 'ChatGPT, Claude, Gemini and Grok in one place, so you don’t need four tabs.',
 } as const
 
 export const about = {
   eyebrow: 'About Me',
-  statementLead: 'I build apps that people actually want to use,',
-  statementRest: 'whether it’s a fitness tool, a learning platform, or a fun game.',
+  statementLead: 'I build small apps for ordinary days,',
+  statementRest: 'like a quick workout, a round of golf, or a few minutes of reading.',
   columns: [
     {
       title: 'Background',
       parts: [
         {
-          text: 'I’m a self-taught developer with a unique perspective on building software. As a husband and father, I understand the value of time—and the importance of building things that create real value.',
+          text: 'I taught myself to code. I’m a husband and a dad, so I care about apps that respect people’s time: open it, do the thing, close it.',
         },
       ],
     },
     {
       title: 'Approach',
       parts: [
-        { text: 'My approach combines ' },
-        { strong: 'business thinking with technical execution' },
-        { text: '. I see problems through the lens of user needs and practical value, not just technical solutions.' },
+        { text: 'I come at it from the ' },
+        { strong: 'business side as much as the code' },
+        { text: '. Before I build anything I ask who it’s for and what they do today without it.' },
       ],
     },
     {
       title: 'AI-first',
       parts: [
-        { text: 'I embrace ' },
-        { strong: 'AI-first development practices' },
-        { text: ', leveraging modern tools to build faster and smarter. This allows me to focus on creating apps that solve real problems.' },
+        { text: 'I build with ' },
+        { strong: 'AI coding tools' },
+        { text: ' every day. They get me to a working version faster, and then my time goes to the parts that need a human call.' },
       ],
     },
   ],
   stats: [
-    { number: '5', label: 'Apps in Portfolio' },
+    { number: '5', label: 'Apps built' },
     { number: '100%', label: 'Self-Taught' },
-    { number: '1', label: 'Mission' },
+    { number: '10', label: 'Minutes in a TENFOLD workout' },
   ],
 } as const
 
@@ -187,15 +187,15 @@ export const guideCard = {
 
 export const contactBand = {
   eyebrow: 'Get in Touch',
-  titleLead: 'Questions about my apps?',
-  titleEmphasis: 'Want to connect?',
+  titleLead: 'Questions about an app?',
+  titleEmphasis: 'Or just want to say hi?',
   primary: { label: 'Contact me', href: '/support' },
   linkedin: { label: 'LinkedIn', href: 'https://www.linkedin.com/in/scottymcmurray/' },
   github: { label: 'GitHub', href: 'https://github.com/spmcmurray' },
 } as const
 
 export const assets = {
-  tenfoldHome: '/afterglow/tenfold-home.jpg',
+  tenfoldHome: '/afterglow/tenfold-onboarding.jpg',
   rrSwipe: '/afterglow/rr-swipe.jpg',
   golfScore: '/afterglow/golf-score.jpg',
   golfMap: '/afterglow/golf-map.jpg',
