@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import './afterglow.css'
-import FluteFilter from '@/components/FluteFilter'
 import SiteChrome from '@/components/SiteChrome'
 
 const inter = Inter({
@@ -52,7 +51,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <FluteFilter />
         <SiteChrome>{children}</SiteChrome>
       </body>
     </html>

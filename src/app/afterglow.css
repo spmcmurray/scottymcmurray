@@ -47,8 +47,6 @@
 
 .glass {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.07));
-  -webkit-backdrop-filter: blur(22px) saturate(140%);
-  backdrop-filter: blur(22px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 20px 50px -20px rgba(0, 0, 20, 0.45);
 }
@@ -161,8 +159,6 @@
   height: var(--header-height);
   padding: 0 28px;
   background: rgba(7, 10, 46, 0.94);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -270,24 +266,129 @@
   isolation: isolate;
 }
 
-.ag .atmo {
-  position: absolute;
-  inset: -60px;
-  z-index: -3;
-  filter: url(#flute);
-  background: #0b1060;
+/* Live SVG filters and large blurs are not painted. Each plate uses a baked
+   gradient image, with a CSS gradient underneath so color still shows if the
+   image is slow or unavailable. */
+.ag [data-bg] {
+  background-color: var(--bg-fallback, #24145f);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.ag .atmo .blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(70px);
+.ag [data-bg='hero'] {
+  --bg-fallback: #3a1880;
+  background-image: linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/hero.jpg'), linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: image-set(
+      url('/afterglow/bg/hero.avif') type('image/avif'),
+      url('/afterglow/bg/hero.webp') type('image/webp'),
+      url('/afterglow/bg/hero.jpg') type('image/jpeg')
+    ),
+    linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+}
+
+.ag [data-bg='golf'] {
+  --bg-fallback: #3a1878;
+  background-image: linear-gradient(145deg, #1f3dff 0%, #ff2d8f 55%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/golf.jpg'), linear-gradient(145deg, #1f3dff, #ff2d8f 55%, #ff7a4d);
+  background-image: image-set(
+      url('/afterglow/bg/golf.avif') type('image/avif'),
+      url('/afterglow/bg/golf.webp') type('image/webp'),
+      url('/afterglow/bg/golf.jpg') type('image/jpeg')
+    ),
+    linear-gradient(145deg, #1f3dff, #ff2d8f 55%, #ff7a4d);
+}
+
+.ag [data-bg='tenfold'] {
+  --bg-fallback: #3a148c;
+  background-image: linear-gradient(165deg, #5a2bff 0%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/tenfold.jpg'), linear-gradient(165deg, #5a2bff, #ff7a4d);
+  background-image: image-set(
+      url('/afterglow/bg/tenfold.avif') type('image/avif'),
+      url('/afterglow/bg/tenfold.webp') type('image/webp'),
+      url('/afterglow/bg/tenfold.jpg') type('image/jpeg')
+    ),
+    linear-gradient(165deg, #5a2bff, #ff7a4d);
+}
+
+.ag [data-bg='rush'] {
+  --bg-fallback: #4a1468;
+  background-image: linear-gradient(200deg, #ff2d8f 0%, #1f3dff 100%);
+  background-image: url('/afterglow/bg/rush.jpg'), linear-gradient(200deg, #ff2d8f, #1f3dff);
+  background-image: image-set(
+      url('/afterglow/bg/rush.avif') type('image/avif'),
+      url('/afterglow/bg/rush.webp') type('image/webp'),
+      url('/afterglow/bg/rush.jpg') type('image/jpeg')
+    ),
+    linear-gradient(200deg, #ff2d8f, #1f3dff);
+}
+
+.ag [data-bg='church'] {
+  --bg-fallback: #2a1878;
+  background-image: linear-gradient(160deg, #5a2bff 0%, #1f3dff 100%);
+  background-image: url('/afterglow/bg/church.jpg'), linear-gradient(160deg, #5a2bff, #1f3dff);
+  background-image: image-set(
+      url('/afterglow/bg/church.avif') type('image/avif'),
+      url('/afterglow/bg/church.webp') type('image/webp'),
+      url('/afterglow/bg/church.jpg') type('image/jpeg')
+    ),
+    linear-gradient(160deg, #5a2bff, #1f3dff);
+}
+
+.ag [data-bg='nexus'] {
+  --bg-fallback: #6a2448;
+  background-image: linear-gradient(200deg, #ff7a4d 0%, #ff2d8f 100%);
+  background-image: url('/afterglow/bg/nexus.jpg'), linear-gradient(200deg, #ff7a4d, #ff2d8f);
+  background-image: image-set(
+      url('/afterglow/bg/nexus.avif') type('image/avif'),
+      url('/afterglow/bg/nexus.webp') type('image/webp'),
+      url('/afterglow/bg/nexus.jpg') type('image/jpeg')
+    ),
+    linear-gradient(200deg, #ff7a4d, #ff2d8f);
+}
+
+.ag [data-bg='guide'] {
+  --bg-fallback: #3a146e;
+  background-image: linear-gradient(150deg, #1f3dff 0%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/guide.jpg'), linear-gradient(150deg, #1f3dff, #ff2d8f 70%, #ff7a4d);
+  background-image: image-set(
+      url('/afterglow/bg/guide.avif') type('image/avif'),
+      url('/afterglow/bg/guide.webp') type('image/webp'),
+      url('/afterglow/bg/guide.jpg') type('image/jpeg')
+    ),
+    linear-gradient(150deg, #1f3dff, #ff2d8f 70%, #ff7a4d);
+}
+
+.ag [data-bg='contact'] {
+  --bg-fallback: #4a1468;
+  background-image: linear-gradient(100deg, #1f3dff 0%, #ff2d8f 52%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/contact.jpg'), linear-gradient(100deg, #1f3dff, #ff2d8f 52%, #ff7a4d);
+  background-image: image-set(
+      url('/afterglow/bg/contact.avif') type('image/avif'),
+      url('/afterglow/bg/contact.webp') type('image/webp'),
+      url('/afterglow/bg/contact.jpg') type('image/jpeg')
+    ),
+    linear-gradient(100deg, #1f3dff, #ff2d8f 52%, #ff7a4d);
+}
+
+.ag .atmo,
+.ag .flutes,
+.ag .grain,
+.ag .vignette,
+.ag .vig {
+  display: none;
+}
+
+.ag .atmo .blob,
+.ag .atmo .streak {
+  filter: none;
 }
 
 .ag .atmo .streak {
   position: absolute;
   border-radius: 50%;
-  filter: blur(28px);
+  filter: none;
 }
 
 .ag .flutes {
@@ -322,7 +423,6 @@
   pointer-events: none;
   opacity: 0.22;
   mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 
 .ag .vignette {
@@ -705,7 +805,7 @@
 }
 
 .ag .plate .atmo { inset: -60px; }
-.ag .plate .blob { filter: blur(80px); }
+.ag .plate .blob { filter: none; }
 
 .ag .vig {
   position: absolute;
@@ -788,8 +888,6 @@ a.ag-tag:hover,
   background: rgba(8, 10, 36, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: #fff;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
 .ag .golf {
@@ -972,8 +1070,6 @@ a.ag-tag:hover,
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08)),
     rgba(8, 10, 36, 0.5);
-  -webkit-backdrop-filter: blur(22px) saturate(140%);
-  backdrop-filter: blur(22px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 20px 50px -24px rgba(0, 0, 20, 0.45);
 }
@@ -1284,4 +1380,21 @@ a.ag-tag:hover,
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08)),
     rgba(8, 10, 36, 0.42);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .ag .stat,
+  .ag .note,
+  .ag .cap,
+  .ag .dock,
+  .ag .mini span,
+  .ag .pill.glass,
+  .hero-nav .navpill,
+  .bar-nav,
+  .mobile-nav.open {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: rgba(7, 10, 40, 0.94);
+  }
 }

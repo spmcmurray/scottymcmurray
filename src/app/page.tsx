@@ -51,6 +51,7 @@ function PhoneShot({
   width,
   height,
   priority = false,
+  loading = 'lazy',
 }: {
   src: string
   alt: string
@@ -59,6 +60,7 @@ function PhoneShot({
   width: number
   height: number
   priority?: boolean
+  loading?: 'eager' | 'lazy'
 }) {
   return (
     <Link href={href} className={className ? `phone ${className}` : 'phone'}>
@@ -70,7 +72,7 @@ function PhoneShot({
           width={width}
           height={height}
           fetchPriority={priority ? 'high' : undefined}
-          loading={priority ? 'eager' : 'lazy'}
+          loading={priority ? 'eager' : loading}
         />
       </span>
     </Link>
@@ -113,7 +115,7 @@ export default function Home() {
     <div className="ag">
       <SiteNav variant="hero" />
       <main id="main" tabIndex={-1}>
-        <section className="stage hero" aria-labelledby="hero-title">
+        <section className="stage hero" data-bg="hero" aria-labelledby="hero-title">
           <div className="atmo" aria-hidden="true">
             <div className="blob b1" />
             <div className="blob b2" />
@@ -162,7 +164,7 @@ export default function Home() {
                 src={assets.tenfoldHome}
                 width={780}
                 height={1688}
-                priority
+                loading="eager"
                 alt="TENFOLD home screen asking if you are ready to start today’s workout"
               />
               <PhoneShot
@@ -171,7 +173,7 @@ export default function Home() {
                 src={assets.rrSwipe}
                 width={780}
                 height={1688}
-                priority
+                loading="eager"
                 alt="RADICAL RUSH with a score of 2200 and a pink swipe-up prompt"
               />
               <PhoneShot
@@ -238,7 +240,7 @@ export default function Home() {
             <p className="sub">{appsIntro.sub}</p>
           </div>
 
-          <div className="plate golf">
+          <div className="plate golf" data-bg="golf">
             <div className="atmo" aria-hidden="true">
               <div className="blob" style={{ width: 900, height: 700, left: -200, top: 200, background: '#1f3dff' }} />
               <div className="blob" style={{ width: 800, height: 700, left: 560, top: -200, background: '#ff2d8f' }} />
@@ -295,7 +297,7 @@ export default function Home() {
           </div>
 
           <div className="duo">
-            <article className="plate">
+            <article className="plate" data-bg="tenfold">
               <div className="atmo" aria-hidden="true">
                 <div className="blob" style={{ width: 700, height: 600, left: -200, top: -150, background: '#5a2bff' }} />
                 <div className="blob" style={{ width: 700, height: 600, left: 200, top: 360, background: '#ff7a4d' }} />
@@ -328,7 +330,7 @@ export default function Home() {
                 alt="TENFOLD workout home screen"
               />
             </article>
-            <article className="plate">
+            <article className="plate" data-bg="rush">
               <div className="atmo" aria-hidden="true">
                 <div className="blob" style={{ width: 700, height: 600, left: 120, top: -150, background: '#ff2d8f' }} />
                 <div className="blob" style={{ width: 700, height: 600, left: -220, top: 360, background: '#1f3dff' }} />
@@ -364,7 +366,7 @@ export default function Home() {
           </div>
 
           <div className="duo web">
-            <article className="plate">
+            <article className="plate" data-bg="church">
               <div className="atmo" aria-hidden="true">
                 <div className="blob" style={{ width: 700, height: 600, left: -150, top: 200, background: '#5a2bff' }} />
                 <div className="blob" style={{ width: 600, height: 500, left: 300, top: -150, background: '#1f3dff' }} />
@@ -394,7 +396,7 @@ export default function Home() {
                 alt="Church Explorer lesson about what the church is"
               />
             </article>
-            <article className="plate">
+            <article className="plate" data-bg="nexus">
               <div className="atmo" aria-hidden="true">
                 <div className="blob" style={{ width: 700, height: 600, left: 160, top: 200, background: '#ff7a4d' }} />
                 <div className="blob" style={{ width: 600, height: 500, left: -200, top: -150, background: '#ff2d8f' }} />
@@ -486,7 +488,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="guide stage">
+            <div className="guide stage" data-bg="guide">
               <div className="atmo" aria-hidden="true">
                 <div className="blob" style={{ width: 700, height: 600, left: -150, top: -150, background: '#1f3dff' }} />
                 <div className="blob" style={{ width: 700, height: 600, left: 300, top: 150, background: '#ff2d8f' }} />
@@ -513,7 +515,7 @@ export default function Home() {
         </section>
 
         <section className="sec" id="contact" aria-labelledby="contact-title">
-          <div className="contact stage">
+          <div className="contact stage" data-bg="contact">
             <div className="atmo" aria-hidden="true">
               <div className="blob" style={{ width: 800, height: 600, left: -150, top: -100, background: '#1f3dff' }} />
               <div className="blob" style={{ width: 800, height: 600, left: 450, top: -50, background: '#ff2d8f' }} />
