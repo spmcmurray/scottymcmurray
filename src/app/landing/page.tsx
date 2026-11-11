@@ -70,7 +70,7 @@ export default function LandingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <main className={styles.landingContainer}>
+      <main className={`${styles.landingContainer} inner-wash`}>
         <section className={styles.hero}>
           <h1>Grow Your Small Business with Modern Tech</h1>
           <p className={styles.subtitle}>

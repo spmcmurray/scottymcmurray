@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AppFivePage() {
   return (
-    <div className={styles.appPage}>
+    <div className={`${styles.appPage} inner-wash`}>
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.heroContent}>

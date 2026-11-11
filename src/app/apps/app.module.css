@@ -4,8 +4,8 @@
 
 /* Hero Section */
 .hero {
-  padding: var(--space-xl) 0;
-  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
+  padding: 4rem 0 2rem;
+  background: transparent;
 }
 
 .container {
@@ -41,11 +41,11 @@
 
 .title {
   font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
   margin-bottom: var(--space-sm);
-  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
 }
 
 .subtitle {
@@ -61,40 +61,38 @@
   flex-wrap: wrap;
 }
 
-.downloadButton {
+.downloadButton,
+.learnButton,
+.supportButton,
+.ctaButton {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-bright) 100%);
-  color: var(--color-bg);
+  padding: 0.9rem 1.4rem;
   font-weight: 600;
-  border-radius: 8px;
-  transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  border-radius: 999px;
+  transition: transform 100ms ease-out;
 }
 
-.downloadButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+.downloadButton,
+.supportButton,
+.ctaButton {
+  background: #fff;
+  color: #141a5c;
 }
 
 .learnButton {
-  display: inline-flex;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: transparent;
-  color: var(--color-text);
-  font-weight: 600;
-  border: 2px solid var(--color-surface-elevated);
-  border-radius: 8px;
-  transition: all var(--transition-base);
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.learnButton:hover {
-  border-color: var(--color-accent);
-  background: var(--color-surface);
-  transform: translateY(-2px);
+.downloadButton:active,
+.learnButton:active,
+.supportButton:active,
+.ctaButton:active {
+  transform: scale(0.97);
 }
 
 /* Phone Mockup */
@@ -108,10 +106,9 @@
   width: 300px;
   border-radius: 40px;
   overflow: hidden;
-  box-shadow: 
-    0 0 0 8px #1a1612,
-    0 0 0 10px rgba(255, 107, 53, 0.2),
-    0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 0 8px #0c1028,
+    0 18px 40px rgba(0, 0, 0, 0.35);
   position: relative;
 }
 
@@ -149,15 +146,15 @@
   background: var(--color-surface);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 
-    0 0 0 1px rgba(255, 107, 53, 0.1),
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
     0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .browserChrome {
   height: 40px;
   background: var(--color-surface-elevated);
-  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   padding: 0 var(--space-sm);
@@ -209,22 +206,19 @@
 }
 
 .featureCard {
-  background: var(--color-surface);
-  border: 1px solid var(--color-surface-elevated);
-  border-radius: 12px;
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
   padding: var(--space-md);
-  transition: transform var(--transition-base), border-color var(--transition-base);
 }
 
 .featureCard:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-accent);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .featureIcon {
   font-size: 2.5rem;
   margin-bottom: var(--space-sm);
-  filter: grayscale(0.3);
 }
 
 .featureCard h3 {
@@ -242,7 +236,7 @@
 /* Support Section */
 .supportSection {
   padding: var(--space-xl) 0;
-  background: var(--color-surface);
+  background: transparent;
   text-align: center;
 }
 
@@ -253,20 +247,20 @@
   margin: 0 auto var(--space-md);
 }
 
-.supportButton {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-bright) 100%);
-  color: var(--color-bg);
-  font-weight: 600;
-  border-radius: 8px;
-  transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+.ctaSection {
+  text-align: center;
 }
 
-.supportButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+.ctaTitle,
+.sectionTitle {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.ctaDescription {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 /* Responsive */
@@ -312,9 +306,8 @@
   border-radius: 40px;
   overflow: hidden;
   box-shadow:
-    0 0 0 8px #1a1612,
-    0 0 0 10px rgba(255, 107, 53, 0.2),
-    0 20px 60px rgba(0, 0, 0, 0.5);
+    0 0 0 8px #0c1028,
+    0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
 .appIcon {

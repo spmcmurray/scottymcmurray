@@ -270,6 +270,23 @@
   overflow-x: clip;
 }
 
+/* Inner pages share the satin plate. The image stops after the top band so
+   long text sits on the solid navy, not on the gradient. */
+.inner-wash {
+  background-color: #070a2e;
+  background-image: linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/hero.jpg'), linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: image-set(
+      url('/afterglow/bg/hero.avif') type('image/avif'),
+      url('/afterglow/bg/hero.webp') type('image/webp'),
+      url('/afterglow/bg/hero.jpg') type('image/jpeg')
+    ),
+    linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 28rem;
+}
+
 .ag .stage {
   position: relative;
   overflow: hidden;
