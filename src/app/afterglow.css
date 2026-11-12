@@ -1428,8 +1428,10 @@ a.ag-tag:hover,
   to { opacity: 1; }
 }
 
-@view-transition {
-  navigation: auto;
+@media (hover: hover) and (pointer: fine) {
+  @view-transition {
+    navigation: auto;
+  }
 }
 
 ::view-transition-old(root) {
