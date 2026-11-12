@@ -153,7 +153,7 @@ export default function Home() {
                 width={780}
                 height={1688}
                 loading="eager"
-                alt="TENFOLD onboarding screen: ten minutes, no equipment, split into warmup, upper body, lower body and core"
+                alt="TENFOLD mid-workout: Jump Step Jump in the warmup, with a timer and pause button"
               />
               <PhoneShot
                 className="p3"
@@ -300,7 +300,7 @@ export default function Home() {
                 src={assets.tenfoldHome}
                 width={780}
                 height={1688}
-                alt="TENFOLD showing the four parts of a ten-minute workout"
+                alt="TENFOLD workout screen with the exercise demo and countdown timer"
               />
             </article>
             <article className="plate" data-bg="rush">
