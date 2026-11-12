@@ -35,6 +35,20 @@ export const metadata: Metadata = {
     description: 'Designed by Scott McMurray in Ohio. Simple apps, and writing on AI-enabled analytics.',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: 'https://scottymcmurray.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'TENFOLD, Clubhouse Golf and Radical Rush on three iPhones, under the headline Simple apps for a simpler life',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Scott McMurray - Simple Apps for a Simpler Life',
+    description: 'Designed by Scott McMurray in Ohio. Simple apps, and writing on AI-enabled analytics.',
+    images: ['https://scottymcmurray.com/og-image.jpg'],
   },
   alternates: {
     canonical: '/',
