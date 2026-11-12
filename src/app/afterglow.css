@@ -1259,6 +1259,7 @@ a.ag-tag:hover,
   .ag .duo { grid-template-columns: 1fr; }
   .ag .duo .plate { height: auto; padding: 28px 28px 0; }
   .ag .duo .plate .phone {
+    display: block;
     position: relative;
     left: auto;
     bottom: auto;

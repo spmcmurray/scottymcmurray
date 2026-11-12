@@ -122,7 +122,7 @@ export const nexus = {
 export const about = {
   eyebrow: 'About Me',
   statementLead: 'I build small apps for ordinary days,',
-  statementRest: 'like a quick workout, a round of golf, or a few minutes of reading.',
+  statementRest: 'like a quick workout, a round of golf, or a few minutes with a game.',
   columns: [
     {
       title: 'Background',
