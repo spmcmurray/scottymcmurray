@@ -1215,7 +1215,14 @@ a.ag-tag:hover,
   .ag .rack .p2 { left: calc(50% - 100px); top: 0; }
   .ag .rack .p3 { left: calc(50% - 100px + 190px); top: 36px; }
   .ag .dock { bottom: 0; }
-  .ag .fade { left: 0; right: 0; height: 160px; }
+  /* The hero clips at its bottom edge. Fade the phones all the way into the
+     navy band below so there is no visible cut. */
+  .ag .fade {
+    left: 0;
+    right: 0;
+    height: 220px;
+    background: linear-gradient(180deg, rgba(7, 10, 46, 0) 0%, rgba(7, 10, 46, 0.7) 55%, var(--navy) 100%);
+  }
 
   .ag h2 { font-size: clamp(40px, 5vw, 56px); }
   .ag .contact h2 { font-size: clamp(46px, 6vw, 68px); }
