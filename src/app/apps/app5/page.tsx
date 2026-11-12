@@ -116,6 +116,41 @@ export default function AppFivePage() {
         </div>
       </section>
 
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle} data-rise>On Your Wrist</h2>
+          <div className={styles.gallery}>
+            <figure className={styles.galleryItem}>
+              <div className={styles.watchFrame}>
+                <img src="/clubhouse-watch-hole.png" alt="Apple Watch showing 388 yards to the middle of the green on hole 4, with back and front distances" className={styles.appScreenshot} />
+              </div>
+              <figcaption className={styles.galleryCaption}>
+                <strong>The hole</strong>
+                Yardage to the green on your wrist, so the phone can stay in the bag.
+              </figcaption>
+            </figure>
+            <figure className={styles.galleryItem}>
+              <div className={styles.watchFrame}>
+                <img src="/clubhouse-watch-aim.png" alt="Apple Watch showing 190 yards to a chosen target on hole 4, with back, middle and front distances to the green" className={styles.appScreenshot} />
+              </div>
+              <figcaption className={styles.galleryCaption}>
+                <strong>The shot</strong>
+                Pick a target and see the distance to it, plus the green behind it.
+              </figcaption>
+            </figure>
+            <figure className={styles.galleryItem}>
+              <div className={styles.watchFrame}>
+                <img src="/clubhouse-watch-score.png" alt="Apple Watch score entry for hole 4 with controls for score, putts and fairway" className={styles.appScreenshot} />
+              </div>
+              <figcaption className={styles.galleryCaption}>
+                <strong>The score</strong>
+                Log score, putts and fairway between shots without taking your phone out.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.supportSection} data-rise>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Questions?</h2>

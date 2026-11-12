@@ -367,6 +367,19 @@
   margin-bottom: 0.25rem;
 }
 
+.watchFrame {
+  width: min(210px, 100%);
+  border-radius: 52px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 7px #0c1028,
+    0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.watchFrame .appScreenshot {
+  display: block;
+}
+
 @media (max-width: 968px) {
   .gallery {
     grid-template-columns: 1fr;
