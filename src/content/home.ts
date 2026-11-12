@@ -195,7 +195,7 @@ export const contactBand = {
 } as const
 
 export const assets = {
-  tenfoldHome: '/afterglow/tenfold-onboarding.jpg',
+  tenfoldHome: '/afterglow/tenfold-workout.jpg',
   rrSwipe: '/afterglow/rr-swipe.jpg',
   golfScore: '/afterglow/golf-score.jpg',
   golfMap: '/afterglow/golf-map.jpg',

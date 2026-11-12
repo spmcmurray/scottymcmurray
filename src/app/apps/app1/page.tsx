@@ -41,7 +41,7 @@ export default function AppOnePage() {
             <div className={styles.phoneFrame}>
               <img 
                 src="/TENFOLD_Screenshot.jpg" 
-                alt="TENFOLD onboarding: Ten minutes, no equipment, with warmup, upper body, lower body and core listed"
+                alt="TENFOLD workout screen: Jump Step Jump in the warmup, with an exercise demo, countdown timer and pause button"
                 className={styles.appScreenshot}
               />
             </div>
