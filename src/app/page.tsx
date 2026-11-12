@@ -7,14 +7,12 @@ import {
   about,
   appsIntro,
   assets,
-  churchExplorer,
   clubhouse,
   contactBand,
   guideCard,
   heroCopy,
   heroNotes,
   highlights,
-  nexus,
   radicalRush,
   skills,
   tenfold,
@@ -187,15 +185,6 @@ export default function Home() {
                   <img src={assets.iconRr} alt="" />
                   <span className="sr-only">RADICAL RUSH</span>
                 </Link>
-                <span className="sep" aria-hidden="true" />
-                <Link href={nexus.href} className="ico">
-                  <img src={assets.iconNexus} alt="" />
-                  <span className="sr-only">Nexus AI</span>
-                </Link>
-                <Link href={churchExplorer.href} className="ico ce">
-                  <span aria-hidden="true">CE</span>
-                  <span className="sr-only">Church Explorer</span>
-                </Link>
               </div>
             </div>
           </div>
@@ -328,63 +317,6 @@ export default function Home() {
                 height={1688}
                 alt="RADICAL RUSH swipe-up game screen"
               />
-            </article>
-          </div>
-
-          <div className="duo web">
-            <article className="plate" data-bg="church">
-              <div className="phead">
-                <div className="row">
-                  <Link href={churchExplorer.href} className="ico ce" aria-label={churchExplorer.name}>
-                    <span>CE</span>
-                  </Link>
-                  <a className="tag" href={churchExplorer.external} target="_blank" rel="noopener noreferrer">
-                    {churchExplorer.tag}
-                  </a>
-                </div>
-                <h3>
-                  <Link href={churchExplorer.href}>{churchExplorer.name}</Link>
-                </h3>
-                <p>{churchExplorer.body}</p>
-              </div>
-              <PhoneShot
-                href={churchExplorer.href}
-                src={assets.church}
-                width={780}
-                height={1688}
-                alt="Church Explorer lesson about what the church is"
-              />
-            </article>
-            <article className="plate" data-bg="nexus">
-              <div className="phead">
-                <div className="row">
-                  <Link href={nexus.href} className="ico" aria-label={nexus.name}>
-                    <img src={assets.iconNexus} alt="" />
-                  </Link>
-                  <a className="tag" href={nexus.external} target="_blank" rel="noopener noreferrer">
-                    {nexus.tag}
-                  </a>
-                </div>
-                <h3>
-                  <Link href={nexus.href}>{nexus.name}</Link>
-                </h3>
-                <p>{nexus.body}</p>
-              </div>
-              <div className="browser">
-                <div className="bar" aria-hidden="true">
-                  <i />
-                  <i />
-                  <i />
-                  <span>getnexus.us</span>
-                </div>
-                <img
-                  src={assets.nexusChat}
-                  alt="Nexus AI chat answering a question about quantum physics. The account sidebar is not shown."
-                  width={975}
-                  height={692}
-                  loading="lazy"
-                />
-              </div>
             </article>
           </div>
         </section>

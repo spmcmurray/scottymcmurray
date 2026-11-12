@@ -1257,8 +1257,15 @@ a.ag-tag:hover,
   .ag .sec-h { flex-direction: column; align-items: flex-start; gap: 18px; }
   .ag .points { grid-template-columns: 1fr 1fr; gap: 22px; }
   .ag .duo { grid-template-columns: 1fr; }
-  .ag .duo .plate { height: 640px; padding: 28px; }
-  .ag .duo .plate .phone { width: 240px; }
+  .ag .duo .plate { height: auto; padding: 28px 28px 0; }
+  .ag .duo .plate .phone {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 240px;
+    margin: 32px auto -150px;
+  }
   .ag .phones { height: 390px; }
   .ag .rack .phone { width: 168px; --r: 32px; --b: 6px; }
   .ag .rack .p1 { left: calc(50% - 84px - 150px); top: 28px; }

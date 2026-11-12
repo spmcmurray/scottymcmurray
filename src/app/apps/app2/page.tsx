@@ -3,6 +3,7 @@ import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: 'Church Explorer - Scott McMurray',
   description: 'Short lessons on Christian church history and theology, with AI to answer your questions.',
 }
