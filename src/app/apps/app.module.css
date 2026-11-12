@@ -208,13 +208,8 @@
 
 .featureCard {
   background: rgba(8, 10, 32, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 1.25rem;
   padding: var(--space-md);
-}
-
-.featureCard:hover {
-  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .featureIcon {
