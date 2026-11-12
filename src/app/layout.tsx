@@ -20,8 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Scott McMurray - App Developer',
-  description: 'Simple apps for a simpler life. Designed by Scott McMurray in Ohio. iOS apps and games focused on fitness, faith, and fun.',
-  keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
+  description: 'Simple apps for a simpler life. Designed by Scott McMurray in Ohio. iOS apps and games for fitness, golf, and fun.',
+  keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'RADICAL RUSH', 'workout app', 'iOS games'],
   authors: [{ name: 'Scott McMurray' }],
   openGraph: {
     title: 'Scott McMurray - Simple Apps for a Simpler Life',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       url: 'https://scottymcmurray.com/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Scott McMurray - Simple Apps for a Simpler Life',
+      alt: 'TENFOLD, Clubhouse Golf and Radical Rush on three iPhones, under the headline Simple apps for a simpler life',
     }],
   },
   twitter: {
