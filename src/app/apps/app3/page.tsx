@@ -13,7 +13,7 @@ export default function AppThreePage() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.heroContent}>
-            <div className={`${styles.badge} animate-in`}>iOS Game</div>
+            <div className={`${styles.badge} animate-in`}>iOS Game · In beta</div>
             <h1 className={`${styles.title} animate-in animate-in-delay-1`}>RADICAL RUSH</h1>
             <p className={`${styles.subtitle} animate-in animate-in-delay-2`}>
               A Bop-It style reaction game for iPhone. Tap, hold, or swipe the way the screen tells you.

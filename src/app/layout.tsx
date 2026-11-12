@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Scott McMurray - App Developer',
   description: 'Simple apps for a simpler life. Designed by Scott McMurray in Ohio. iOS apps and games focused on fitness, faith, and fun.',
-  keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'Church Explorer', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
+  keywords: ['Scott McMurray', 'Scotty McMurray', 'app developer', 'Ohio developer', 'TENFOLD', 'RADICAL RUSH', 'workout app', 'Christian learning', 'iOS games'],
   authors: [{ name: 'Scott McMurray' }],
   openGraph: {
     title: 'Scott McMurray - Simple Apps for a Simpler Life',

@@ -7,9 +7,7 @@ const columns = [
     title: 'Apps',
     links: [
       { label: 'TENFOLD', href: '/apps/app1' },
-      { label: 'Church Explorer', href: '/apps/app2' },
       { label: 'RADICAL RUSH', href: '/apps/app3' },
-      { label: 'Nexus AI', href: '/apps/app4' },
       { label: 'Clubhouse Golf', href: '/apps/app5' },
     ],
   },

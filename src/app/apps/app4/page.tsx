@@ -3,6 +3,7 @@ import { LineIcon } from '@/components/Icons'
 import styles from '../app.module.css'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: 'Nexus AI - Scott McMurray',
   description: 'ChatGPT, Claude, Gemini and Grok in one chat window.',
 }

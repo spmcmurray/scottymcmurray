@@ -71,7 +71,7 @@ export const highlights = [
 export const appsIntro = {
   eyebrow: 'The apps',
   titleLead: 'What I’ve built so far:',
-  titleEmphasis: 'a workout, a golf card, a game, and two AI tools.',
+  titleEmphasis: 'a workout, a golf card, and a game.',
   sub: 'Tap any of them to see more.',
 } as const
 
@@ -98,7 +98,7 @@ export const tenfold = {
 export const radicalRush = {
   href: '/apps/app3',
   name: 'RADICAL RUSH',
-  tag: 'iOS Game',
+  tag: 'iOS Game · In beta',
   body: 'A reaction game with six gestures: tap, hold, and swipe in four directions. Get one wrong and the run is over.',
   pills: ['Classic and Zen modes', 'Game Center leaderboards', 'Haptics'],
 } as const
@@ -150,7 +150,7 @@ export const about = {
     },
   ],
   stats: [
-    { number: '5', label: 'Apps built' },
+    { number: '3', label: 'Apps built' },
     { number: '100%', label: 'Self-Taught' },
     { number: '10', label: 'Minutes in a TENFOLD workout' },
   ],
