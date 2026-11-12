@@ -101,7 +101,11 @@ export default function Motion() {
     const startViewTransition = (document as Document & {
       startViewTransition?: (update: () => void | Promise<void>) => { finished: Promise<void> }
     }).startViewTransition
-    const canTransition = typeof startViewTransition === 'function'
+    // View transitions snapshot the whole page. On touch browsers (iOS Safari
+    // especially) that fights the collapsing toolbar and the fixed header, so
+    // phones get the plain page fade instead.
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+    const canTransition = typeof startViewTransition === 'function' && finePointer
 
     const onClick = (event: MouseEvent) => {
       if (reduce || !canTransition || pending.current) return
