@@ -6,6 +6,40 @@
 .hero {
   padding: 4rem 0 2rem;
   background: transparent;
+  position: relative;
+  isolation: isolate;
+}
+
+/* The page-level wash is a fixed-height band, which cut off partway through a
+   tall hero. Paint it on the hero instead so it grows with the content, then
+   fade it into the navy below. */
+.appPage:global(.inner-wash) {
+  background-image: none;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: calc(var(--header-height) * -1);
+  left: 0;
+  right: 0;
+  bottom: -6rem;
+  pointer-events: none;
+  background-color: #070a2e;
+  background-image: linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: url('/afterglow/bg/hero.jpg'), linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-image: image-set(
+      url('/afterglow/bg/hero.avif') type('image/avif'),
+      url('/afterglow/bg/hero.webp') type('image/webp'),
+      url('/afterglow/bg/hero.jpg') type('image/jpeg')
+    ),
+    linear-gradient(160deg, #1f4dff 0%, #5a2bff 34%, #ff2d8f 70%, #ff7a4d 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 62%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 62%, transparent 100%);
 }
 
 .container {
