@@ -15,7 +15,7 @@ export const heroCopy = {
   headlineEmphasis: 'for a',
   /** Includes the trailing period. */
   headlineTail: 'simpler life.',
-  lede: 'I’m Scott. I build iPhone and web apps in Ohio: a ten-minute workout, a golf scorecard you can talk to, a reaction game.',
+  lede: 'Building things that help make every day a little better.',
   primaryCta: { label: 'Explore my apps', href: '#apps' },
   secondaryCta: { label: 'Read the guide', href: '/guides/ai-analyst-agent' },
 } as const
