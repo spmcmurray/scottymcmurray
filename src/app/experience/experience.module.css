@@ -1,0 +1,323 @@
+.container {
+  font-family: var(--font-body);
+  padding: var(--header-height) var(--space-md) var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  color: var(--color-text);
+}
+
+.hero {
+  text-align: center;
+  padding: var(--space-xl) 0 var(--space-lg) 0;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value {
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+  font-size: 1.1rem;
+}
+
+.thesis {
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+.thesis h2 {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+  font-size: 2.5rem;
+}
+
+.thesis p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.timeline {
+  margin: var(--space-xl) 0;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+  font-size: 2.5rem;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.role {
+  background: rgba(8, 10, 32, 0.96);
+  border-radius: 1.25rem;
+  padding: var(--space-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.role:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.roleHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.roleTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.4rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.roleTitle svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.roleDates {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.roleCompany {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-sm);
+}
+
+.roleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roleList li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.65rem;
+}
+
+.roleList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+}
+
+.earlier {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: var(--space-md);
+}
+
+.skills {
+  margin: var(--space-xl) 0;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+  font-size: 2.5rem;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.skillCard {
+  background: rgba(8, 10, 32, 0.96);
+  border-radius: 1.25rem;
+  padding: var(--space-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.skillCard h3 {
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  font-size: 1.2rem;
+}
+
+.skillCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillCard li {
+  color: var(--color-text-muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.95rem;
+}
+
+.skillCard li:last-child {
+  border-bottom: 0;
+}
+
+.education {
+  margin: var(--space-xl) 0;
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+  font-size: 2.5rem;
+}
+
+.eduGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.eduCard {
+  text-align: center;
+}
+
+.eduCard h3 {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.eduCard p {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact {
+  background: rgba(8, 10, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+
+.contact h2 {
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  font-size: 2.5rem;
+}
+
+.contact p {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto var(--space-lg) auto;
+}
+
+.ctaRow {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #fff;
+  color: #141a5c;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: transform 100ms ease-out;
+}
+
+.ctaButton:active {
+  transform: scale(0.97);
+}
+
+.ctaButtonGhost {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: transform 100ms ease-out;
+}
+
+.ctaButtonGhost:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .thesis h2,
+  .timeline h2,
+  .skills h2,
+  .education h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .roleHead {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

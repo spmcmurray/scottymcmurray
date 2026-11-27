@@ -12,6 +12,10 @@ const columns = [
     ],
   },
   {
+    title: 'Professional',
+    links: [{ label: 'Experience', href: '/experience' }],
+  },
+  {
     title: 'Writing',
     links: [{ label: 'AI Analyst Agent', href: '/guides/ai-analyst-agent' }],
   },
