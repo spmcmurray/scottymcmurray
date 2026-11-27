@@ -5,10 +5,9 @@ import { LineIcon } from '@/components/Icons'
 export const metadata: Metadata = {
   title: 'Experience - Scott McMurray',
   description:
-    '10+ years at ClarkDietrich, a $1.7B manufacturer: eight years leading enterprise sales, then BI and AI platform work, including a seat on the CEO-sponsored AI Adoption Team.',
+    '10+ years in complex manufacturing operations: eight years leading enterprise sales, then BI and AI platform work, including a seat on an enterprise-wide AI adoption initiative.',
   keywords: [
     'Scott McMurray',
-    'ClarkDietrich',
     'business intelligence',
     'AI adoption',
     'Microsoft Fabric',
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Experience - Scott McMurray',
     description:
-      'Eight years leading enterprise sales, then hands-on BI and AI platform work at a $1.7B manufacturer.',
+      'Eight years leading enterprise sales, then hands-on BI and AI platform work inside complex manufacturing operations.',
     type: 'website',
     locale: 'en_US',
   },
@@ -35,7 +34,7 @@ const roles = [
     icon: 'chart' as const,
     bullets: [
       'Modernizing enterprise analytics and forecasting on Microsoft Fabric — lakehouse architecture, star schemas, and semantic models serving Finance, Operations, Sales, S&OP, and HR.',
-      'Serve on the CEO-sponsored AI Adoption Team: identify and validate AI use cases by embedding with business teams, evaluate tooling (Azure OpenAI, Claude, agentic coding tools), and lead enablement and change management for company-wide rollout.',
+      'Serve on an enterprise-wide AI adoption initiative: identify and validate AI use cases by embedding with business teams, evaluate tooling (Azure OpenAI, Claude, agentic coding tools), and lead enablement and change management for company-wide rollout.',
     ],
   },
   {
@@ -106,9 +105,9 @@ export default function ExperiencePage() {
       <section className={styles.hero}>
         <h1>Professional Experience</h1>
         <p className={styles.subtitle}>
-          10+ years at ClarkDietrich, a $1.7B manufacturer and North America&rsquo;s largest producer of
-          cold-formed steel framing: eight years leading enterprise accounts and a regional sales team,
-          then hands-on BI and AI platform work, including a seat on the CEO-sponsored AI Adoption Team.
+          10+ years in complex manufacturing operations: eight years leading enterprise accounts and a
+          regional sales team, then hands-on BI and AI platform work, including a seat on an
+          enterprise-wide AI adoption initiative.
         </p>
         <p className={styles.value}>Fluent with both C-level sponsors and technical teams, having been on both sides.</p>
       </section>
@@ -126,7 +125,7 @@ export default function ExperiencePage() {
       </section>
 
       <section className={styles.timeline}>
-        <h2 data-rise>ClarkDietrich</h2>
+        <h2 data-rise>Career Timeline</h2>
         <div className={styles.roles}>
           {roles.map((role) => (
             <article className={styles.role} key={role.title} data-rise data-lift>
@@ -137,7 +136,7 @@ export default function ExperiencePage() {
                 <span className={styles.roleDates}>{role.dates}</span>
               </div>
               <p className={styles.roleCompany}>
-                ClarkDietrich — Warren, Ohio — $1.7B manufacturer
+                Complex manufacturing operations
               </p>
               <ul className={styles.roleList}>
                 {role.bullets.map((bullet) => (
@@ -148,7 +147,7 @@ export default function ExperiencePage() {
           ))}
         </div>
         <p className={styles.earlier}>
-          Earlier: Marketing Coordinator (promoted from Intern), Cogistix LLC — ERP software implementation
+          Earlier: Marketing Coordinator (promoted from Intern) — ERP software implementation
           (SYSPRO, Acumatica) — April 2015 – September 2016
         </p>
       </section>
