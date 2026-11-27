@@ -8,6 +8,7 @@ type Variant = 'hero' | 'bar'
 
 const links = [
   { href: '/#apps', label: 'Apps', key: 'apps' },
+  { href: '/experience', label: 'Experience', key: 'experience' },
   { href: '/#about', label: 'About', key: 'about' },
   { href: '/guides/ai-analyst-agent', label: 'Guide', key: 'guide' },
   { href: '/support', label: 'Support', key: 'support' },
@@ -94,6 +95,7 @@ export default function SiteNav({ variant }: { variant: Variant }) {
       if (pathname.startsWith('/apps')) return true
       return pathname === '/' && (spot === 'home' || spot === 'apps')
     }
+    if (key === 'experience') return pathname === '/experience'
     if (key === 'about') return pathname === '/' && spot === 'about'
     if (key === 'guide') return pathname.startsWith('/guides')
     if (key === 'support') return pathname === '/support'
