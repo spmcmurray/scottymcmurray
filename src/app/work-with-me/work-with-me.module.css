@@ -233,3 +233,14 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: var(--space-lg);
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+}
