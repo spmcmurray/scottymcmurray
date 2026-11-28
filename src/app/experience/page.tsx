@@ -5,20 +5,21 @@ import { LineIcon } from '@/components/Icons'
 export const metadata: Metadata = {
   title: 'Experience - Scott McMurray',
   description:
-    '10+ years in complex manufacturing operations: eight years leading enterprise sales, then BI and AI platform work, including a seat on an enterprise-wide AI adoption initiative.',
+    'How a sales background turned into building BI and agentic AI platforms inside complex manufacturing operations — in my own words.',
   keywords: [
     'Scott McMurray',
     'business intelligence',
+    'agentic analytics',
+    'semantic layer',
     'AI adoption',
     'Microsoft Fabric',
     'Power BI',
     'manufacturing data',
-    'sales leadership',
   ],
   openGraph: {
     title: 'Experience - Scott McMurray',
     description:
-      'Eight years leading enterprise sales, then hands-on BI and AI platform work inside complex manufacturing operations.',
+      'How a sales background turned into building BI and agentic AI platforms inside complex manufacturing operations.',
     type: 'website',
     locale: 'en_US',
   },
@@ -27,158 +28,128 @@ export const metadata: Metadata = {
   },
 }
 
-const roles = [
-  {
-    title: 'Business Intelligence Lead',
-    dates: 'June 2026 – Present',
-    icon: 'chart' as const,
-    bullets: [
-      'Modernizing enterprise analytics and forecasting on Microsoft Fabric — lakehouse architecture, star schemas, and semantic models serving Finance, Operations, Sales, S&OP, and HR.',
-      'Serve on an enterprise-wide AI adoption initiative: identify and validate AI use cases by embedding with business teams, evaluate tooling (Azure OpenAI, Claude, agentic coding tools), and lead enablement and change management for company-wide rollout.',
-    ],
-  },
-  {
-    title: 'Business Intelligence Analyst II',
-    dates: 'April 2025 – June 2026',
-    icon: 'bot' as const,
-    bullets: [
-      'Built an internal no-code forecasting tool: a full machine learning platform with a Python backend and user-friendly front end enabling non-technical users to train models, generate predictions, and track accuracy over time.',
-      'Developed predictive models for sales forecasting and inventory management using Azure Machine Learning and Power BI; designed and maintained the executive reporting used daily across five business functions.',
-    ],
-  },
-  {
-    title: 'Account Executive Team Lead',
-    dates: 'December 2019 – March 2025',
-    icon: 'target' as const,
-    bullets: [
-      'Led the inside sales team serving Northeast and Mid-Atlantic regions while managing comprehensive account relationships — sales metrics, pricing, and contract negotiations; consistently achieved monthly and annual sales targets.',
-    ],
-  },
-  {
-    title: 'Account Executive',
-    dates: 'November 2016 – December 2019',
-    icon: 'clipboard' as const,
-    bullets: [
-      'Managed all aspects of inside sales for assigned accounts: relationship building, pricing administration, large commercial project negotiation, and cross-functional coordination with manufacturing, engineering, and shipping.',
-    ],
-  },
+const timeline = [
+  { title: 'Business Intelligence Lead', dates: 'June 2026 – Present', icon: 'chart' as const },
+  { title: 'Business Intelligence Analyst II', dates: 'April 2025 – June 2026', icon: 'bot' as const },
+  { title: 'Account Executive Team Lead', dates: 'December 2019 – March 2025', icon: 'target' as const },
+  { title: 'Account Executive', dates: 'November 2016 – December 2019', icon: 'clipboard' as const },
 ] as const
 
-const skillGroups = [
-  {
-    title: 'AI / LLM',
-    items: [
-      'OpenAI API, Anthropic API',
-      'Prompt design, model routing/selection',
-      'Retrieval-augmented generation',
-      'AI-first development (Claude Code, GitHub Copilot)',
-      'Azure OpenAI, Azure Machine Learning',
-    ],
-  },
-  {
-    title: 'Data Platform',
-    items: [
-      'Microsoft Fabric (lakehouse, Dataflows, pipelines)',
-      'Power BI, semantic models',
-      'Star schema design, DAX, SQL',
-      'Predictive modeling',
-    ],
-  },
-  {
-    title: 'Engineering',
-    items: ['Python', 'TypeScript / JavaScript', 'React Native, Expo', 'Firebase, REST APIs', 'Git / GitHub'],
-  },
-  {
-    title: 'Customer & Program',
-    items: [
-      'Workflow mapping, use case validation',
-      'Executive communication',
-      'Enablement workshops',
-      'Change management',
-    ],
-  },
+const tools = [
+  'Power BI',
+  'Microsoft Fabric',
+  'SQL Server Management Studio',
+  'Azure Machine Learning',
+  'DAX & star schema design',
+  'Python',
+  'OpenAI & Anthropic APIs',
+  'Claude Code & MCP',
+  'React Native & Expo',
+  'TypeScript',
 ] as const
 
 export default function ExperiencePage() {
   return (
     <main className={`${styles.container} inner-wash`}>
       <section className={styles.hero}>
-        <h1>Professional Experience</h1>
+        <h1>How I Got Here</h1>
         <p className={styles.subtitle}>
-          10+ years in complex manufacturing operations: eight years leading enterprise accounts and a
-          regional sales team, then hands-on BI and AI platform work, including a seat on an
-          enterprise-wide AI adoption initiative.
+          I didn&rsquo;t set out to become a data and AI person — I was just curious about how the
+          business actually worked, and that curiosity never really stopped.
         </p>
-        <p className={styles.value}>Fluent with both C-level sponsors and technical teams, having been on both sides.</p>
+        <p className={styles.quote}>
+          &ldquo;I&rsquo;m somebody who just figures things out, even when I haven&rsquo;t done it
+          before. I&rsquo;m a natural, creative builder.&rdquo;
+        </p>
       </section>
 
-      <section className={styles.thesis} data-rise>
-        <h2>Sales and Data, Together</h2>
+      <section className={styles.story} data-rise>
+        <h2>From Sales to Systems</h2>
         <p>
-          Most data and AI people have never owned a number or carried a relationship. Most salespeople have
-          never built the system that reports on their own performance. I&rsquo;ve done both — eight years
-          managing enterprise accounts and leading a sales team, then building BI platforms and leading AI
-          adoption from the inside. That combination is what makes complex stakeholder relationships easier to
-          manage: I can sit with a VP of Sales and talk pipeline, then sit with an engineer and talk schema
-          design, in the same day.
+          I got into data and AI because I was naturally curious about how the business worked and
+          what actually made it successful — not because it was part of some plan. That curiosity
+          turned into self-study: I picked up Power BI, Microsoft Fabric, and SQL Server Management
+          Studio on my own time. Eventually I enrolled in a one-year graduate certificate program in
+          Data Analytics at Youngstown State University, where I learned database management, data
+          visualization, and machine learning and predictive modeling.
+        </p>
+        <p>
+          I started applying what I&rsquo;d learned at the company I was already working for in
+          sales, and it turned into a new role: Business Intelligence Analyst. From there, I moved up
+          to Business Intelligence Lead.
+        </p>
+      </section>
+
+      <section className={styles.story} data-rise>
+        <h2>What I&rsquo;m Building Now</h2>
+        <p>
+          The project I&rsquo;m proudest of is an agentic analytics platform I built from the ground
+          up. I designed a semantic layer for each department and focus area in the company — reusable
+          metrics and measures that mean the same thing no matter who&rsquo;s asking the question. On
+          top of that sits a context layer that explains how the business actually operates: our
+          terms, our best practices, the way we do things day to day. An AI agent, built on Claude and
+          connected through MCP, uses that semantic layer to answer complex business questions
+          directly, in plain language, for every department in the company.
+        </p>
+      </section>
+
+      <section className={styles.story} data-rise>
+        <h2>Why Sales and Data Together Works</h2>
+        <p>
+          I serve every department in the company now, and I think my years in sales are a big part
+          of why that works. Sales gave me real exposure to how the business operates — not just the
+          data about it, but the manufacturing side of it too. That means I can sit down with the data
+          engineering team and speak their technical language, then turn around and translate that
+          for business users — and take a business requirement and break it down into something
+          engineering can actually act on.
+        </p>
+        <p>
+          That translation step is where projects get lost. I try to make sure we&rsquo;re solving the
+          problem that actually needs solving, instead of losing it somewhere in the middle.
+        </p>
+      </section>
+
+      <section className={styles.story} data-rise>
+        <h2>Why I Do This</h2>
+        <p>
+          What keeps me doing this is the creativity of it, and the satisfaction of building something
+          that didn&rsquo;t exist before — something that adds real value. Some days that&rsquo;s a
+          report or an interactive dashboard. Some days it&rsquo;s a web app. Some days it&rsquo;s an
+          entire agentic analytics platform. I like figuring things out, even when I haven&rsquo;t done
+          it before.
         </p>
       </section>
 
       <section className={styles.timeline}>
         <h2 data-rise>Career Timeline</h2>
-        <div className={styles.roles}>
-          {roles.map((role) => (
-            <article className={styles.role} key={role.title} data-rise data-lift>
-              <div className={styles.roleHead}>
-                <h3 className={styles.roleTitle}>
-                  <LineIcon name={role.icon} /> {role.title}
-                </h3>
-                <span className={styles.roleDates}>{role.dates}</span>
-              </div>
-              <p className={styles.roleCompany}>
-                Complex manufacturing operations
-              </p>
-              <ul className={styles.roleList}>
-                {role.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-        <p className={styles.earlier}>
-          Earlier: Marketing Coordinator (promoted from Intern) — ERP software implementation
-          (SYSPRO, Acumatica) — April 2015 – September 2016
-        </p>
-      </section>
-
-      <section className={styles.skills}>
-        <h2 data-rise>Technical Skills</h2>
-        <div className={styles.skillGrid}>
-          {skillGroups.map((group) => (
-            <div className={styles.skillCard} key={group.title} data-rise data-lift>
-              <h3>{group.title}</h3>
-              <ul>
-                {group.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+        <div className={styles.timelineList}>
+          {timeline.map((role) => (
+            <div className={styles.timelineRow} key={role.title} data-rise>
+              <h3 className={styles.timelineTitle}>
+                <LineIcon name={role.icon} /> {role.title}
+              </h3>
+              <span className={styles.timelineDates}>{role.dates}</span>
             </div>
           ))}
         </div>
+        <p className={styles.footnote}>
+          Earlier: Marketing Coordinator (promoted from Intern), ERP software implementation (SYSPRO,
+          Acumatica) — April 2015 – September 2016
+        </p>
+        <p className={styles.footnote}>
+          B.S. Business Administration &amp; Marketing and a Graduate Certificate in Data Analytics,
+          both from Youngstown State University
+        </p>
       </section>
 
-      <section className={styles.education}>
-        <h2 data-rise>Education</h2>
-        <div className={styles.eduGrid}>
-          <div className={styles.eduCard} data-rise>
-            <h3>Graduate Certificate, Data Analytics</h3>
-            <p>Youngstown State University — 2023</p>
-          </div>
-          <div className={styles.eduCard} data-rise>
-            <h3>B.S. Business Administration, Marketing</h3>
-            <p>Youngstown State University — GPA 3.81 — 2016</p>
-          </div>
+      <section className={styles.tools}>
+        <h2 data-rise>Tools I Work With</h2>
+        <div className={styles.tagRow}>
+          {tools.map((tool) => (
+            <span className={styles.tag} key={tool} data-rise>
+              {tool}
+            </span>
+          ))}
         </div>
       </section>
 
