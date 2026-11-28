@@ -57,10 +57,6 @@ export default function ExperiencePage() {
           I didn&rsquo;t set out to become a data and AI person — I was just curious about how the
           business actually worked, and that curiosity never really stopped.
         </p>
-        <p className={styles.quote}>
-          I&rsquo;m somebody who just figures things out, even when I haven&rsquo;t done it before.
-          I&rsquo;m a natural, creative builder.
-        </p>
       </section>
 
       <section className={styles.story} data-rise>
