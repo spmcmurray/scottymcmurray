@@ -58,8 +58,8 @@ export default function ExperiencePage() {
           business actually worked, and that curiosity never really stopped.
         </p>
         <p className={styles.quote}>
-          &ldquo;I&rsquo;m somebody who just figures things out, even when I haven&rsquo;t done it
-          before. I&rsquo;m a natural, creative builder.&rdquo;
+          I&rsquo;m somebody who just figures things out, even when I haven&rsquo;t done it before.
+          I&rsquo;m a natural, creative builder.
         </p>
       </section>
 
